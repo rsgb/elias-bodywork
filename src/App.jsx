@@ -6,57 +6,43 @@ import { ResponsiveImage } from './components/ResponsiveImage/ResponsiveImage'
 import { Reveal } from './components/Reveal/Reveal'
 import { SectionDivider } from './components/SectionDivider/SectionDivider'
 import { TestimonialsPlaceholder } from './components/TestimonialsPlaceholder/TestimonialsPlaceholder'
+import { SessionSeriesAccordion } from './components/SessionSeriesAccordion/SessionSeriesAccordion'
+import { useTranslations } from './context/LanguageContext'
 import { images } from './data/images'
 import { contact } from './data/contact'
 import styles from './App.module.css'
 
-const supportReasons = [
-  'relaxation and slowing down',
-  'stress and overwhelm',
-  'feeling more attuned to the body',
-  'grounding and balance',
-  'self-development',
-  'support during challenging life phases',
-  'integration after physical strain or injury',
-  'accompaniment alongside conventional medical treatment',
-  'moments of transition, change, or preparation',
-]
-
 export default function App() {
+  const tr = useTranslations()
   const year = new Date().getFullYear()
 
   return (
     <>
       <Navbar />
       <main className={styles.main}>
-        <section id="hero" className={styles.hero} aria-labelledby="hero-title">
-          <div className={styles.heroGrid}>
-            <Reveal className={styles.heroImage}>
-              <ResponsiveImage
-                src={images.hero.src}
-                alt={images.hero.alt}
-                priority
-                ratio="4/3"
-                className={styles.interludeFigure}
-                sizes="(min-width: 900px) 42vw, 100vw"
-              />
-            </Reveal>
-            <div className={styles.heroCopy}>
-              <Heading id="hero-title" variant="display" level={1} as="h1">
-                Fascia Rebalancing & Bodywork
-              </Heading>
-              <Text lead>
-                A space to slow down, listen, and come back into contact with your body.
-              </Text>
-              <Text muted>
-                Sessions that support relaxation, body awareness, grounding, and inner balance.
-              </Text>
-              <div className={styles.ctaRow}>
-                <Button href="#contact">Book a session</Button>
-                <Button href="#contact" variant="secondary">
-                  Get in touch
-                </Button>
-              </div>
+        <section id="hero" className={styles.heroSection} aria-labelledby="hero-title">
+          <div className={styles.heroImageWrap}>
+            <ResponsiveImage
+              src={images.hero.src}
+              alt={images.hero.alt}
+              priority
+              className={styles.heroFigure}
+              sizes="(min-width: 901px) 48vw, 100vw"
+            />
+            <div className={styles.heroGradient} aria-hidden="true" />
+          </div>
+          <div className={styles.heroContent}>
+            <h1 className={styles.heroTitle} id="hero-title">
+              <span className={styles.heroName}>{tr.hero.name}</span>
+              <span className={styles.heroSubtitle}>{tr.hero.subtitle}</span>
+            </h1>
+            <Text lead>{tr.hero.lead}</Text>
+            <Text muted>{tr.hero.muted}</Text>
+            <div className={styles.ctaRow}>
+              <Button href="#contact">{tr.hero.book}</Button>
+              <Button href="#contact" variant="secondary">
+                {tr.hero.contact}
+              </Button>
             </div>
           </div>
         </section>
@@ -65,70 +51,44 @@ export default function App() {
 
         <Section id="intro" variant="spacious">
           <Reveal>
-            <Heading level={2}>What this is</Heading>
+            <Heading level={2}>{tr.intro.heading}</Heading>
             <div className={styles.proseStack}>
-              <p>
-                Rebalancing is a form of bodywork that works with the fascia system — the connective
-                tissue network that runs through the whole body. It is influenced by Rolfing,
-                craniosacral work, and the Rebalancing tradition that developed through the
-                collaboration of bodyworkers and therapists.
-              </p>
-              <p>
-                In this work, touch is not about &ldquo;fixing&rdquo; the body, but about creating
-                the conditions for awareness, regulation, and integration.
-              </p>
-              <p>
-                This is not a typical massage. Breath, presence, perception, and the way you
-                experience yourself in your body are all part of the process.
-              </p>
+              <p>{tr.intro.p1}</p>
+              <p>{tr.intro.p2}</p>
+              <p>{tr.intro.p3}</p>
             </div>
           </Reveal>
         </Section>
 
-        <TestimonialsPlaceholder items={[]} />
+        <section className={styles.imageBand} style={{ backgroundImage: `url(${images.interludeA.src})` }}>
+          <div className={styles.imageBandInner}>
+            <p className={styles.imageBandQuote}>{tr.imageBand.quote}</p>
+          </div>
+        </section>
 
-        <div className={styles.interlude}>
-          <Reveal delay={80}>
-            <ResponsiveImage
-              src={images.interludeA.src}
-              alt={images.interludeA.alt}
-              ratio="21/9"
-              className={styles.interludeFigure}
-              sizes="100vw"
-            />
-          </Reveal>
-        </div>
+        <TestimonialsPlaceholder items={[]} />
 
         <Section id="about" variant="spacious">
           <div className={`${styles.split} ${styles.splitReverse}`}>
             <Reveal>
               <div>
-                <Heading level={2}>About Elias</Heading>
+                <Heading level={2}>{tr.about.heading}</Heading>
                 <div className={styles.proseStack}>
-                  <p>
-                    I have long been drawn to receiving bodywork and to supporting people through
-                    touch. What brought me to Rebalancing was the quality I experienced in it:
-                    presence, depth, and a way of working that felt less like applying a technique
-                    and more like entering into communication with another person&rsquo;s system.
-                  </p>
-                  <p>
-                    I completed a two-year Rebalancing training in Germany and Switzerland, and I
-                    currently continue deepening this path by assisting in the training itself.
-                  </p>
-                  <p>
-                    For me, this work is about listening carefully, working with what is actually
-                    present, and supporting people in becoming more connected with themselves.
-                  </p>
+                  <p>{tr.about.p1}</p>
+                  <p>{tr.about.p2}</p>
+                  <p>{tr.about.p3}</p>
                 </div>
               </div>
             </Reveal>
             <Reveal delay={100}>
-              <ResponsiveImage
-                src={images.about.src}
-                alt={images.about.alt}
-                ratio="3/4"
-                sizes="(min-width: 768px) 40vw, 100vw"
-              />
+              <div className={styles.aboutImageOverlap}>
+                <ResponsiveImage
+                  src={images.about.src}
+                  alt={images.about.alt}
+                  ratio="4/5"
+                  sizes="(min-width: 768px) 40vw, 100vw"
+                />
+              </div>
             </Reveal>
           </div>
         </Section>
@@ -137,29 +97,24 @@ export default function App() {
 
         <Section id="support" variant="default">
           <Reveal>
-            <Heading level={2}>What this work can support</Heading>
-            <Text>People may come for many different reasons, for example:</Text>
+            <Heading level={2}>{tr.support.heading}</Heading>
+            <Text>{tr.support.intro}</Text>
             <ul className={styles.supportList}>
-              {supportReasons.map((item) => (
+              {tr.supportReasons.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
             <div className={styles.note}>
-              <p>
-                The intention is not to diagnose, treat disease, or promise healing, but to offer
-                supportive bodywork and a space for awareness and regulation.
-              </p>
+              <p>{tr.support.note}</p>
             </div>
           </Reveal>
         </Section>
 
-        <div className={styles.interlude}>
+        <div className={styles.interludeBleed}>
           <Reveal delay={60}>
             <ResponsiveImage
               src={images.interludeB.src}
               alt={images.interludeB.alt}
-              ratio="16/9"
-              className={styles.interludeFigure}
               sizes="100vw"
             />
           </Reveal>
@@ -167,66 +122,50 @@ export default function App() {
 
         <Section id="session" variant="spacious">
           <Reveal>
-            <Heading level={2}>What happens in a session</Heading>
+            <Heading level={2}>{tr.session.heading}</Heading>
             <div className={styles.proseStack}>
-              <p>
-                Each session can unfold differently. Many people leave feeling more grounded, more
-                in touch with themselves, more balanced, or more relaxed. For others, the experience
-                can also feel energising or activating.
-              </p>
-              <p>
-                Because the work can affect the nervous system quite deeply, it helps to leave some
-                spaciousness afterwards instead of rushing into the next thing.
-              </p>
-              <p>
-                A session is usually around 90 minutes. It often begins with a short conversation,
-                and sometimes with a quiet moment to arrive more fully in the present.
-              </p>
-              <p>
-                From there, the work may include body awareness, posture observation, and hands-on
-                touch. The focus is not on imposing an external interpretation, but on sensing what
-                is actually present in your experience right now.
-              </p>
-              <p>
-                The touch itself can be subtle or more direct, depending on what is needed. It may
-                at times meet areas of discomfort, but the aim is not intensity for its own sake.
-                More pressure is not &ldquo;better.&rdquo; The work follows communication, presence,
-                and what the body is ready to meet.
-              </p>
+              <p>{tr.session.p1}</p>
+              <p>{tr.session.p2}</p>
+              <p>{tr.session.p3}</p>
+              <p>{tr.session.p4}</p>
+              <p>{tr.session.p5}</p>
             </div>
           </Reveal>
         </Section>
 
-        <Section id="format" variant="default">
+        <Section id="offering" variant="spacious">
           <Reveal>
-            <Heading level={2}>Session format</Heading>
-            <div className={styles.cards}>
+            <Heading level={2}>{tr.offering.heading}</Heading>
+            <div className={styles.cardsTwo}>
               <article className={styles.card}>
-                <h3 className={styles.cardTitle}>Individual sessions</h3>
-                <p>
-                  Individual sessions are possible and can be shaped around what is currently alive
-                  for you.
-                </p>
+                <h3 className={styles.cardTitle}>{tr.offering.cardIndividualTitle}</h3>
+                <p>{tr.offering.cardIndividualBody}</p>
               </article>
               <article className={styles.card}>
-                <h3 className={styles.cardTitle}>10-session series</h3>
-                <p>
-                  Rebalancing traditionally follows a 10-session approach, moving through different
-                  body areas and related themes.
-                </p>
-              </article>
-              <article className={styles.card}>
-                <h3 className={styles.cardTitle}>Rhythm</h3>
-                <p>
-                  The rhythm between sessions depends on the person and the process. Around two
-                  weeks between sessions can be a useful orientation, though this can vary.
-                </p>
+                <h3 className={styles.cardTitle}>{tr.offering.cardRhythmTitle}</h3>
+                <p>{tr.offering.cardRhythmBody}</p>
               </article>
             </div>
+
+            <h3 className={styles.subheading}>{tr.pricing.heading}</h3>
+            <p className={styles.seriesIntro}>{tr.pricing.intro}</p>
+            <div className={styles.pricingTable}>
+              {tr.pricing.items.map((row) => (
+                <div key={row.duration} className={styles.pricingRow}>
+                  <span className={styles.pricingDuration}>{row.duration}</span>
+                  <span className={styles.pricingAmount}>{row.price}</span>
+                </div>
+              ))}
+            </div>
+            <p className={styles.pricingFootnote}>{tr.pricing.footnote}</p>
+
+            <h3 className={styles.subheading}>{tr.series.heading}</h3>
+            <p className={styles.seriesIntro}>{tr.series.intro}</p>
+            <SessionSeriesAccordion sessions={tr.series.sessions} />
           </Reveal>
         </Section>
 
-        <section className={styles.gallery} aria-label="Practice impressions">
+        <section className={styles.gallery} aria-label={tr.galleryLabel}>
           <div className={styles.galleryGrid}>
             {images.gallery.map((img, i) => (
               <Reveal key={img.id} delay={i * 50}>
@@ -234,7 +173,7 @@ export default function App() {
                   src={img.src}
                   alt={img.alt}
                   className={styles.galleryItem}
-                  sizes="(min-width: 900px) 18vw, 45vw"
+                  sizes="(min-width: 900px) 22vw, 100vw"
                 />
               </Reveal>
             ))}
@@ -247,36 +186,34 @@ export default function App() {
           <div className={styles.split}>
             <Reveal>
               <div>
-                <Heading level={2}>Get in touch</Heading>
-                <Text>
-                  If you would like to book a session or ask a question, feel free to reach out.
-                </Text>
+                <Heading level={2}>{tr.contact.heading}</Heading>
+                <Text>{tr.contact.intro}</Text>
                 <ul className={styles.contactList}>
                   <li>
-                    <span className={styles.contactLabel}>Email</span>
-                    {contact.email.includes('@') ? (
-                      <a href={`mailto:${contact.email}`}>{contact.email}</a>
-                    ) : (
-                      <span>{contact.email}</span>
-                    )}
+                    <span className={styles.contactLabel}>{tr.contact.email}</span>
+                    <a href={`mailto:${contact.email}`}>{contact.email}</a>
                   </li>
                   <li>
-                    <span className={styles.contactLabel}>Phone / Signal / WhatsApp</span>
-                    <span>{contact.phone}</span>
+                    <span className={styles.contactLabel}>{tr.contact.phone}</span>
+                    <a href={`tel:${contact.phoneTel}`}>{contact.phoneDisplay}</a>
                   </li>
                   <li>
-                    <span className={styles.contactLabel}>Location</span>
-                    <span>{contact.location}</span>
+                    <span className={styles.contactLabel}>{tr.contact.location}</span>
+                    <span>{tr.contact.locationValue}</span>
                   </li>
                   <li>
-                    <span className={styles.contactLabel}>Languages</span>
-                    <span>{contact.languages}</span>
+                    <span className={styles.contactLabel}>{tr.contact.languages}</span>
+                    <span>{tr.contact.languagesValue}</span>
                   </li>
                 </ul>
+                <div className={styles.contactActions}>
+                  <Button href={`mailto:${contact.email}`}>{tr.hero.contact}</Button>
+                  <Button href={`tel:${contact.phoneTel}`} variant="secondary">
+                    {contact.phoneDisplay}
+                  </Button>
+                </div>
                 <div className={styles.contactFootnote}>
-                  <Text muted>
-                    Pricing available on request. If finances are a concern, feel free to reach out.
-                  </Text>
+                  <Text muted>{tr.pricing.footnote}</Text>
                 </div>
               </div>
             </Reveal>
@@ -293,39 +230,32 @@ export default function App() {
 
         <div className={styles.ctaBand}>
           <div className={styles.ctaBandInner}>
-            <p className={styles.ctaBandText}>Ready to slow down and listen in?</p>
-            <Button href="#contact">Book a session</Button>
+            <p className={styles.ctaBandText}>{tr.ctaBand.text}</p>
+            <Button href="#contact">{tr.ctaBand.button}</Button>
           </div>
         </div>
 
         <Section id="disclaimer" variant="compact">
           <Reveal>
-            <Heading level={2}>Disclaimer</Heading>
+            <Heading level={2}>{tr.disclaimer.heading}</Heading>
             <div className={styles.disclaimerBox}>
-              <p>
-                This work is offered as bodywork for well-being, relaxation, and awareness. It is not
-                a medical treatment, does not replace medical care, and does not include diagnosis or
-                promises of healing. If you have acute or serious health concerns, please consult an
-                appropriate medical professional.
-              </p>
+              <p>{tr.disclaimer.body}</p>
             </div>
           </Reveal>
         </Section>
 
         <footer id="footer" className={styles.footer}>
           <div className={styles.footerInner}>
-            <p className={styles.footerName}>Elias</p>
-            <p className={styles.footerTag}>Fascia Rebalancing & Bodywork</p>
+            <p className={styles.footerName}>{tr.footer.name}</p>
+            <p className={styles.footerTag}>{tr.footer.tag}</p>
             <p className={styles.footerContact}>
-              {contact.email.includes('@') ? (
-                <a href={`mailto:${contact.email}`}>{contact.email}</a>
-              ) : (
-                <span>{contact.email}</span>
-              )}
+              <a href={`mailto:${contact.email}`}>{contact.email}</a>
               {' · '}
-              <span>{contact.phone}</span>
+              <a href={`tel:${contact.phoneTel}`}>{contact.phoneDisplay}</a>
             </p>
-            <p className={styles.footerCopy}>© {year} Elias</p>
+            <p className={styles.footerCopy}>
+              © {year} {tr.footer.name}
+            </p>
           </div>
         </footer>
       </main>

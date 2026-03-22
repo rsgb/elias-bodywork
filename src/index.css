@@ -1,16 +1,19 @@
 :root {
-  --color-bg: #f7f5f0;
-  --color-bg-elevated: #fdfcfa;
-  --color-sand: #e8e4db;
-  --color-sand-deep: #d4cfc3;
-  --color-olive: #6b7562;
-  --color-olive-muted: #8a9280;
-  --color-text: #2c2a26;
-  --color-text-soft: #5c5852;
-  --color-border: rgba(44, 42, 38, 0.08);
+  --color-bg: #faf7f1;
+  --color-bg-elevated: #fffefb;
+  --color-sand: #ebe4d8;
+  --color-sand-deep: #d9d0c2;
+  --color-wash: #f3ece2;
+  --color-olive: #5a6b52;
+  --color-olive-muted: #7a8872;
+  --color-olive-strong: #4a5a44;
+  --color-text: #2a2824;
+  --color-text-soft: #5a564e;
+  --color-border: rgba(74, 90, 68, 0.12);
+  --color-border-strong: rgba(74, 90, 68, 0.2);
 
-  --font-sans: 'DM Sans', system-ui, sans-serif;
-  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -20,8 +23,8 @@
   --space-2xl: 6rem;
   --space-3xl: 8rem;
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
 
   --nav-height: 4rem;
   --content-max: 42rem;
@@ -61,13 +64,13 @@ body {
 }
 
 a {
-  color: var(--color-olive);
+  color: var(--color-olive-strong);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
 
 a:hover {
-  color: var(--color-text);
+  color: var(--color-olive);
 }
 
 img {

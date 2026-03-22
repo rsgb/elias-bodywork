@@ -7,8 +7,8 @@
   background: linear-gradient(
     90deg,
     transparent,
-    var(--color-border) 15%,
-    var(--color-border) 85%,
+    var(--color-border-strong) 15%,
+    var(--color-border-strong) 85%,
     transparent
   );
 }
