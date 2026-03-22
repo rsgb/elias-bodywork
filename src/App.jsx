@@ -6,7 +6,7 @@ import { ResponsiveImage } from './components/ResponsiveImage/ResponsiveImage'
 import { Reveal } from './components/Reveal/Reveal'
 import { SectionDivider } from './components/SectionDivider/SectionDivider'
 import { TestimonialsPlaceholder } from './components/TestimonialsPlaceholder/TestimonialsPlaceholder'
-import { SessionSeriesAccordion } from './components/SessionSeriesAccordion/SessionSeriesAccordion'
+import { SessionSeriesGrid } from './components/SessionSeriesGrid/SessionSeriesGrid'
 import { useTranslations } from './context/LanguageContext'
 import { images } from './data/images'
 import { contact } from './data/contact'
@@ -33,11 +33,13 @@ export default function App() {
           </div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle} id="hero-title">
-              <span className={styles.heroName}>{tr.hero.name}</span>
-              <span className={styles.heroSubtitle}>{tr.hero.subtitle}</span>
+              <span className={styles.heroMainTitle}>{tr.hero.mainTitle}</span>
+              <span className={styles.heroPractitioner}>{tr.hero.practitioner}</span>
             </h1>
-            <p className={styles.heroHeadline}>{tr.hero.headline}</p>
-            <p className={styles.heroSubhead}>{tr.hero.subheadline}</p>
+            <p className={styles.heroTagline}>{tr.hero.tagline}</p>
+            {tr.hero.supportingLine ? (
+              <p className={styles.heroSupporting}>{tr.hero.supportingLine}</p>
+            ) : null}
             <div className={styles.ctaRow}>
               <Button href="#contact">{tr.hero.book}</Button>
               <Button href="#contact" variant="secondary">
@@ -78,6 +80,7 @@ export default function App() {
                   <p>{tr.about.p1}</p>
                   <p>{tr.about.p2}</p>
                   <p>{tr.about.p3}</p>
+                  <p>{tr.about.p4}</p>
                 </div>
               </div>
             </Reveal>
@@ -153,7 +156,7 @@ export default function App() {
 
             <h3 className={styles.subheading}>{tr.series.heading}</h3>
             <p className={styles.seriesIntro}>{tr.series.intro}</p>
-            <SessionSeriesAccordion sessions={tr.series.sessions} />
+            <SessionSeriesGrid sessions={tr.series.sessions} />
 
             <h3 className={styles.subheading}>{tr.pricing.heading}</h3>
             <p className={styles.seriesIntro}>{tr.pricing.intro}</p>
@@ -208,12 +211,6 @@ export default function App() {
                 </ul>
                 <div className={styles.contactActions}>
                   <Button href={`mailto:${contact.email}`}>{tr.hero.book}</Button>
-                  <Button href={`tel:${contact.phoneTel}`} variant="secondary">
-                    {contact.phoneDisplay}
-                  </Button>
-                </div>
-                <div className={styles.contactFootnote}>
-                  <Text muted>{tr.pricing.footnote}</Text>
                 </div>
               </div>
             </Reveal>
@@ -226,15 +223,6 @@ export default function App() {
               />
             </Reveal>
           </div>
-        </Section>
-
-        <Section id="disclaimer" variant="compact">
-          <Reveal>
-            <Heading level={2}>{tr.disclaimer.heading}</Heading>
-            <div className={styles.disclaimerBox}>
-              <p>{tr.disclaimer.body}</p>
-            </div>
-          </Reveal>
         </Section>
 
         <footer id="footer" className={styles.footer}>

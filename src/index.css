@@ -12,8 +12,8 @@
   --color-border: rgba(74, 90, 68, 0.12);
   --color-border-strong: rgba(74, 90, 68, 0.2);
 
-  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Inter', system-ui, -apple-system, sans-serif;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;

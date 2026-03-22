@@ -17,22 +17,23 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  min-height: min(58vh, 520px);
+  min-height: min(68vh, 600px);
   max-height: none;
 }
 
 .heroImageWrap :global(figure) {
   margin: 0;
   border-radius: 0;
-  min-height: min(58vh, 520px);
+  min-height: min(68vh, 600px);
   max-height: none;
 }
 
 .heroImageWrap :global(img) {
   width: 100%;
-  height: min(58vh, 520px);
-  min-height: min(58vh, 520px);
+  height: min(68vh, 600px);
+  min-height: min(68vh, 600px);
   object-fit: cover;
+  object-position: center 38%;
 }
 
 .heroGradient {
@@ -65,45 +66,48 @@
 
 .heroTitle {
   margin: 0 0 var(--space-md);
-  font-family: var(--font-serif);
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-weight: 600;
   color: var(--color-text);
-  letter-spacing: -0.02em;
-  line-height: 1.08;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
 }
 
-.heroName {
+.heroMainTitle {
   display: block;
-  font-size: clamp(2.15rem, 7vw, 3.35rem);
+  font-size: clamp(2.35rem, 8vw, 3.65rem);
+  font-weight: 600;
   color: var(--color-olive-strong);
+  letter-spacing: -0.04em;
 }
 
-.heroSubtitle {
+.heroPractitioner {
   display: block;
-  margin-top: 0.2em;
-  font-size: clamp(1.35rem, 4.5vw, 1.85rem);
+  margin-top: 0.35em;
+  font-size: clamp(1.05rem, 3vw, 1.25rem);
   font-weight: 500;
-  color: var(--color-text);
-  letter-spacing: 0.02em;
+  color: var(--color-text-soft);
+  letter-spacing: 0.01em;
 }
 
-.heroHeadline {
+.heroTagline {
   margin: 0 0 var(--space-sm);
-  font-family: var(--font-serif);
-  font-size: clamp(1.15rem, 3.2vw, 1.45rem);
+  font-family: var(--font-sans);
+  font-size: clamp(1.05rem, 2.8vw, 1.2rem);
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.55;
   color: var(--color-text);
-  max-width: 36rem;
+  max-width: 38rem;
 }
 
-.heroSubhead {
+.heroSupporting {
   margin: 0 0 var(--space-md);
   font-family: var(--font-sans);
-  font-size: 1.0625rem;
-  line-height: 1.65;
+  font-size: 0.9375rem;
+  line-height: 1.55;
   color: var(--color-text-soft);
-  max-width: var(--content-max);
+  font-style: italic;
+  max-width: 32rem;
 }
 
 .ctaRow {
@@ -119,9 +123,9 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  min-height: min(42vh, 420px);
+  min-height: min(52vh, 520px);
   background-size: cover;
-  background-position: center;
+  background-position: center 56%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,11 +154,12 @@
 
 .imageBandQuote {
   margin: 0;
-  font-family: var(--font-serif);
-  font-size: clamp(1.2rem, 3.2vw, 1.55rem);
+  font-family: var(--font-sans);
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
   font-weight: 500;
   line-height: 1.45;
   color: var(--color-text);
+  letter-spacing: -0.01em;
 }
 
 /* ——— Prose & splits ——— */
@@ -263,9 +268,9 @@
 }
 
 .cardTitle {
-  font-family: var(--font-serif);
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
   margin: 0 0 var(--space-sm);
   color: var(--color-olive-strong);
 }
@@ -279,9 +284,9 @@
 
 .subheading {
   margin: var(--space-xl) 0 var(--space-md);
-  font-family: var(--font-serif);
-  font-size: clamp(1.2rem, 2.5vw, 1.45rem);
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-size: clamp(1.15rem, 2.4vw, 1.35rem);
+  font-weight: 600;
   color: var(--color-olive-strong);
 }
 
@@ -326,7 +331,7 @@
 }
 
 .pricingAmount {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-weight: 600;
   color: var(--color-olive-strong);
   letter-spacing: 0.02em;
@@ -352,14 +357,15 @@
 .interludeBleed :global(figure) {
   border-radius: 0;
   margin: 0;
-  min-height: min(48vh, 560px);
+  min-height: min(56vh, 620px);
 }
 
 .interludeBleed :global(img) {
   width: 100%;
-  height: min(48vh, 560px);
-  min-height: min(48vh, 560px);
+  height: min(56vh, 620px);
+  min-height: min(56vh, 620px);
   object-fit: cover;
+  object-position: center 72%;
 }
 
 .interludeContained {
@@ -473,21 +479,6 @@
   gap: var(--space-sm);
 }
 
-.disclaimerBox {
-  max-width: var(--content-max);
-  padding: var(--space-md);
-  background-color: rgba(235, 228, 216, 0.4);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border-strong);
-}
-
-.disclaimerBox p {
-  margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.65;
-  color: var(--color-text-soft);
-}
-
 .footer {
   padding-block: var(--space-xl) var(--space-lg);
   padding-inline: var(--space-md);
@@ -500,8 +491,8 @@
 }
 
 .footerName {
-  font-family: var(--font-serif);
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-weight: 600;
   font-size: 1.0625rem;
   margin: 0 0 0.25rem;
   color: var(--color-olive-strong);
@@ -560,8 +551,9 @@
   }
 
   .heroImageWrap :global(img) {
-    height: min(72vh, 640px);
-    min-height: 360px;
+    height: min(76vh, 720px);
+    min-height: 420px;
+    object-position: center 36%;
   }
 
   .heroGradient {

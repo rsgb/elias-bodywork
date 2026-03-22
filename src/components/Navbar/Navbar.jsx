@@ -66,7 +66,7 @@ export function Navbar() {
       <nav className={styles.nav} aria-label="Primary">
         <div className={styles.navStart}>
           <a href="#hero" className={styles.brand} onClick={closeMenu}>
-            Elias Krause
+            {tr.nav.brand}
           </a>
         </div>
 

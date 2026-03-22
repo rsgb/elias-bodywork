@@ -1,16 +1,16 @@
 /**
  * Site copy — German (default) and English.
- * Prices: `pricing.items` (both languages).
- * Ten-session accordion: `series.sessions` (8 rows; sessions 8–10 merged).
+ * Prices: `pricing.items`. Ten-session grid: `series.sessions`.
  */
 export const translations = {
   de: {
     meta: {
       title: 'Elias Krause — Rebalancing',
       description:
-        'Rebalancing-Sitzungen für mehr Wahrnehmung, Erdung und Kontakt mit dem eigenen Körper — Elias Krause.',
+        'Rebalancing-Sitzungen für Erdung, Wahrnehmung und tieferen Kontakt mit Deinem Körper — Elias Krause, Körperarbeit.',
     },
     nav: {
+      brand: 'Elias Krause, Körperarbeit',
       intro: 'Rebalancing',
       about: 'Über mich',
       support: 'Unterstützung',
@@ -24,27 +24,27 @@ export const translations = {
     },
     lang: { de: 'DE', en: 'EN', label: 'Sprache' },
     hero: {
-      name: 'Elias Krause',
-      subtitle: 'Rebalancing',
-      headline:
-        'Rebalancing-Sitzungen für mehr Wahrnehmung, Erdung und Kontakt mit dem eigenen Körper',
-      subheadline:
-        'Ein Raum, um langsamer zu werden, anzukommen und wieder mehr mit dem eigenen Körper in Verbindung zu kommen.',
+      mainTitle: 'Rebalancing',
+      practitioner: 'Elias Krause',
+      tagline:
+        'Rebalancing-Sitzungen für Erdung, Wahrnehmung und tieferen Kontakt mit Deinem Körper.',
+      supportingLine: 'Für Körper, Geist und Seele.',
       book: 'Sitzung anfragen',
       secondaryCta: 'Kontakt aufnehmen',
     },
     intro: {
       heading: 'Was ist Rebalancing?',
       p1: 'Rebalancing ist eine integrative Faszien- und Körperarbeit. Mit achtsamer Berührung und langsamen, gezielten Strichen wird mit oberflächlichen und tieferen Bindegewebsstrukturen gearbeitet — mit dem Fasziennetz, das den ganzen Körper durchzieht.',
-      p2: 'Faszien verbinden Knochen, Muskeln, Gelenke, Organe und Gefässe miteinander. Sie geben dem Körper Halt und Beweglichkeit und reagieren sensibel auf Belastung, Spannung und innere Zustände.',
-      p3: 'Rebalancing hat Einflüsse unter anderem aus Rolfing, craniosacraler Arbeit und weiteren körpertherapeutischen Ansätzen. Im Mittelpunkt steht nicht, den Körper zu „reparieren“, sondern einen Raum für Wahrnehmung, Regulation und Integration zu öffnen.',
+      p2: 'Faszien verbinden und umhüllen Knochen, Muskeln, Gelenke, Organe und Gefässe. Sie geben dem Körper Halt und Beweglichkeit und reagieren sensibel auf Belastung, Spannung und innere Zustände.',
+      p3: 'Rebalancing hat Einflüsse unter anderem aus Rolfing, craniosacraler Arbeit und weiteren körperorientierten Ansätzen. Im Mittelpunkt steht nicht, den Körper zu „reparieren“, sondern einen Raum für Wahrnehmung, Regulation und Integration zu öffnen.',
       p4: 'Es ist keine klassische Massage. Atem, Präsenz, Berührung und die bewusste Wahrnehmung des eigenen Körpers sind wesentliche Bestandteile der Arbeit.',
     },
     about: {
       heading: 'Über mich',
-      p1: 'Ich bin seit Langem von Körperarbeit angezogen und von der Möglichkeit, Menschen durch Berührung in ihrem Wohlbefinden zu unterstützen. Zum Rebalancing hat mich besonders die Qualität dieser Arbeit geführt: Präsenz, Tiefe und die Erfahrung, dass Berührung mehr sein kann als Technik — nämlich ein achtsamer Kontakt mit dem, was im Körper gerade da ist.',
-      p2: 'Meine Ausbildung habe ich über zwei Jahre in Deutschland und der Schweiz gemacht. Zurzeit begleite ich als Assistent einen weiteren Ausbildungszyklus, was meinen eigenen Weg weiter vertieft.',
-      p3: 'In meiner Arbeit geht es mir darum, aufmerksam zuzuhören, mit dem zu arbeiten, was tatsächlich gegenwärtig ist, und Menschen dabei zu unterstützen, mehr Kontakt zu sich selbst zu finden.',
+      p1: 'Seit Langem fühle ich mich von Körperarbeit angezogen und von der Möglichkeit, Menschen durch Berührung in ihrem Wohlbefinden zu unterstützen.',
+      p2: 'Zum Rebalancing hat mich besonders die Qualität dieser Arbeit geführt: Präsenz, Tiefe und die Erfahrung, dass Berührung mehr sein kann als Technik — nämlich ein achtsamer Kontakt mit dem, was im Körper gerade da ist.',
+      p3: 'Meine Ausbildung habe ich über zwei Jahre in Deutschland und der Schweiz gemacht. Zurzeit begleite ich als Assistent einen weiteren Ausbildungszyklus, was meinen eigenen Weg weiter vertieft.',
+      p4: 'In meiner Arbeit geht es mir darum, aufmerksam zuzuhören, mit dem zu arbeiten, was tatsächlich gegenwärtig ist, und Menschen dabei zu unterstützen, mehr Kontakt zu sich selbst zu finden.',
     },
     support: {
       heading: 'Wobei Rebalancing unterstützen kann',
@@ -67,7 +67,7 @@ export const translations = {
       heading: 'Wie eine Sitzung abläuft',
       p1: 'Eine Sitzung dauert in der Regel etwa 90 Minuten, längere oder kürzere Formate sind nach Absprache ebenfalls möglich. Sie beginnt meist mit einem kurzen Gespräch und manchmal mit einem stillen Moment, um mehr im gegenwärtigen Moment anzukommen.',
       p2: 'Danach können Körperwahrnehmung, ein einfaches Body Reading im Stehen und die Arbeit mit Berührung Teil der Sitzung sein. Im Mittelpunkt steht nicht eine äussere Deutung, sondern die Frage, was im Moment tatsächlich wahrnehmbar und lebendig ist.',
-      p3: 'Die Berührung kann sehr fein oder auch direkter sein — je nachdem, was gerade sinnvoll ist. Entscheidend ist nicht Intensität, sondern Präsenz, Kommunikation und das, was der Körper in diesem Moment aufnehmen kann.',
+      p3: 'Die Berührung kann fein oder tiefergehend sein — je nachdem, was gerade sinnvoll ist. Entscheidend ist nicht Intensität, sondern Präsenz, Kommunikation und das, was der Körper in diesem Moment aufnehmen kann.',
       p4: 'Viele Menschen erleben nach einer Sitzung mehr Ruhe, Erdung, innere Klarheit oder einen stärkeren Kontakt zu sich selbst. Andere erleben die Arbeit als belebend oder aktivierend. Es kann hilfreich sein, sich danach etwas Zeit zu lassen, bevor man direkt in den nächsten Termin geht.',
     },
     offering: {
@@ -125,10 +125,6 @@ export const translations = {
       languagesLabel: 'Sprachen',
       languagesValue: 'Deutsch, Englisch',
     },
-    disclaimer: {
-      heading: 'Hinweis',
-      body: 'Diese Arbeit wird als Körperarbeit für Wohlbefinden, Entspannung und Wahrnehmung angeboten. Sie ist keine medizinische Behandlung und ersetzt keine ärztliche, physiotherapeutische oder psychotherapeutische Begleitung. Es werden keine Diagnosen gestellt und keine Heilversprechen gegeben. Bei akuten oder ernsthaften gesundheitlichen Beschwerden wende Dich bitte an eine entsprechend qualifizierte Fachperson.',
-    },
     footer: {
       name: 'Elias Krause',
       tag: 'Rebalancing',
@@ -140,9 +136,10 @@ export const translations = {
     meta: {
       title: 'Elias Krause — Rebalancing',
       description:
-        'Rebalancing sessions for grounding, awareness, and deeper contact with your body — Elias Krause.',
+        'Rebalancing sessions for grounding, awareness, and deeper contact with your body — Elias Krause, bodywork.',
     },
     nav: {
+      brand: 'Elias Krause, Bodywork',
       intro: 'Rebalancing',
       about: 'About',
       support: 'Support',
@@ -156,27 +153,26 @@ export const translations = {
     },
     lang: { de: 'DE', en: 'EN', label: 'Language' },
     hero: {
-      name: 'Elias Krause',
-      subtitle: 'Rebalancing',
-      headline:
-        'Rebalancing sessions for grounding, awareness, and deeper contact with your body',
-      subheadline:
-        'A space to slow down, arrive, and come back into closer contact with your body.',
+      mainTitle: 'Rebalancing',
+      practitioner: 'Elias Krause',
+      tagline:
+        'Rebalancing sessions for grounding, awareness, and deeper contact with your body.',
       book: 'Book a session',
       secondaryCta: 'Get in touch',
     },
     intro: {
       heading: 'What is Rebalancing?',
       p1: 'Rebalancing is an integrative form of fascia and bodywork. Through attentive touch and slow, precise strokes, it works with superficial and deeper connective tissue structures — with the fascial network that runs through the whole body.',
-      p2: 'Fascia connects bones, muscles, joints, organs, and vessels. It gives the body support and mobility, and it responds sensitively to strain, tension, and inner states.',
-      p3: 'Rebalancing has been shaped by influences such as Rolfing, craniosacral work, and other body-based therapeutic approaches. The focus is not on “fixing” the body, but on opening a space for awareness, regulation, and integration.',
+      p2: 'Fascia connects and surrounds bones, muscles, joints, organs, and vessels. It gives the body support and mobility, and it responds sensitively to strain, tension, and inner states.',
+      p3: 'Rebalancing has been shaped by influences such as Rolfing, craniosacral work, and other body-based approaches. The focus is not on “fixing” the body, but on opening a space for awareness, regulation, and integration.',
       p4: 'It is not a typical massage. Breath, presence, touch, and conscious body awareness are all essential parts of the work.',
     },
     about: {
       heading: 'About me',
-      p1: 'I have long felt drawn to bodywork and to supporting people through touch. What brought me especially to Rebalancing was the quality I experienced in it: presence, depth, and the sense that touch can be more than technique — it can be a careful contact with what is actually present in the body.',
-      p2: 'I completed my training over two years in Germany and Switzerland. At the moment, I am also assisting in another training cycle, which continues to deepen my own path and understanding.',
-      p3: 'In my work, I try to listen carefully, work with what is truly present, and support people in finding a deeper connection with themselves.',
+      p1: 'I have been drawn to bodywork for a long time and to the possibility of supporting people’s well-being through touch.',
+      p2: 'What brought me especially to Rebalancing was the quality I experienced in it: presence, depth, and the sense that touch can be more than technique — it can be a careful contact with what is actually present in the body.',
+      p3: 'I completed my training over two years in Germany and Switzerland. At the moment, I am also assisting in another training cycle, which continues to deepen my own path and understanding.',
+      p4: 'In my work, I try to listen carefully, work with what is truly present, and support people in finding a deeper connection with themselves.',
     },
     support: {
       heading: 'What Rebalancing can support',
@@ -199,7 +195,7 @@ export const translations = {
       heading: 'What happens in a session',
       p1: 'A session usually lasts around 90 minutes, although shorter or longer formats are also possible by agreement. It often begins with a short conversation and sometimes with a quiet moment to arrive more fully in the present.',
       p2: 'From there, body awareness, a simple standing body reading, and hands-on work may all become part of the session. The focus is not on imposing an outside interpretation, but on sensing what is actually present and alive in the moment.',
-      p3: 'The touch can be very subtle or more direct, depending on what is needed. What matters is not intensity, but presence, communication, and what the body is ready to meet.',
+      p3: 'The touch can be subtle or deeper, depending on what is needed. What matters is not intensity, but presence, communication, and what the body is ready to meet.',
       p4: 'Many people leave a session feeling calmer, more grounded, clearer inside, or more in contact with themselves. Others experience the work as energising or activating. It can help to leave a little space afterwards rather than rushing straight into the next thing.',
     },
     offering: {
@@ -256,10 +252,6 @@ export const translations = {
       emailLabel: 'Email',
       languagesLabel: 'Languages',
       languagesValue: 'German, English',
-    },
-    disclaimer: {
-      heading: 'Please note',
-      body: 'This work is offered as bodywork for well-being, relaxation, and awareness. It is not a medical treatment and does not replace medical, physiotherapeutic, or psychotherapeutic care. No diagnoses are made and no healing promises are given. If you have acute or serious health concerns, please consult an appropriately qualified professional.',
     },
     footer: {
       name: 'Elias Krause',
