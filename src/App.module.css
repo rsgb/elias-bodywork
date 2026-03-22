@@ -100,16 +100,6 @@
   max-width: 38rem;
 }
 
-.heroSupporting {
-  margin: 0 0 var(--space-md);
-  font-family: var(--font-sans);
-  font-size: 0.9375rem;
-  line-height: 1.55;
-  color: var(--color-text-soft);
-  font-style: italic;
-  max-width: 32rem;
-}
-
 .ctaRow {
   display: flex;
   flex-wrap: wrap;
@@ -148,18 +138,21 @@
 .imageBandInner {
   position: relative;
   z-index: 1;
-  max-width: 36rem;
+  max-width: 38rem;
   text-align: center;
+  padding-inline: var(--space-md);
 }
 
 .imageBandQuote {
   margin: 0;
-  font-family: var(--font-sans);
-  font-size: clamp(1.15rem, 3vw, 1.45rem);
-  font-weight: 500;
-  line-height: 1.45;
-  color: var(--color-text);
-  letter-spacing: -0.01em;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.2rem, 3.1vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-olive-strong);
+  letter-spacing: 0.01em;
+  text-wrap: balance;
 }
 
 /* ——— Prose & splits ——— */

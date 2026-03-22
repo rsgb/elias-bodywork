@@ -28,13 +28,12 @@ export const translations = {
       practitioner: 'Elias Krause',
       tagline:
         'Rebalancing-Sitzungen für Erdung, Wahrnehmung und tieferen Kontakt mit Deinem Körper.',
-      supportingLine: 'Für Körper, Geist und Seele.',
       book: 'Sitzung anfragen',
       secondaryCta: 'Kontakt aufnehmen',
     },
     intro: {
       heading: 'Was ist Rebalancing?',
-      p1: 'Rebalancing ist eine integrative Faszien- und Körperarbeit. Mit achtsamer Berührung und langsamen, gezielten Strichen wird mit oberflächlichen und tieferen Bindegewebsstrukturen gearbeitet — mit dem Fasziennetz, das den ganzen Körper durchzieht.',
+      p1: 'Rebalancing ist eine integrative Faszien- und Körperarbeit, die den Menschen als Einheit von Körper, Geist und Seele betrachtet. Mit achtsamer Berührung und langsamen, gezielten Strichen wird mit oberflächlichen und tieferen Bindegewebsstrukturen gearbeitet — mit dem Fasziennetz, das den ganzen Körper durchzieht.',
       p2: 'Faszien verbinden und umhüllen Knochen, Muskeln, Gelenke, Organe und Gefässe. Sie geben dem Körper Halt und Beweglichkeit und reagieren sensibel auf Belastung, Spannung und innere Zustände.',
       p3: 'Rebalancing hat Einflüsse unter anderem aus Rolfing, craniosacraler Arbeit und weiteren körperorientierten Ansätzen. Im Mittelpunkt steht nicht, den Körper zu „reparieren“, sondern einen Raum für Wahrnehmung, Regulation und Integration zu öffnen.',
       p4: 'Es ist keine klassische Massage. Atem, Präsenz, Berührung und die bewusste Wahrnehmung des eigenen Körpers sind wesentliche Bestandteile der Arbeit.',
@@ -162,7 +161,7 @@ export const translations = {
     },
     intro: {
       heading: 'What is Rebalancing?',
-      p1: 'Rebalancing is an integrative form of fascia and bodywork. Through attentive touch and slow, precise strokes, it works with superficial and deeper connective tissue structures — with the fascial network that runs through the whole body.',
+      p1: 'Rebalancing is an integrative form of fascia and bodywork that addresses the human being as a whole — body, mind, and soul. Through attentive touch and slow, precise strokes, it works with superficial and deeper connective tissue structures — with the fascial network that runs through the whole body.',
       p2: 'Fascia connects and surrounds bones, muscles, joints, organs, and vessels. It gives the body support and mobility, and it responds sensitively to strain, tension, and inner states.',
       p3: 'Rebalancing has been shaped by influences such as Rolfing, craniosacral work, and other body-based approaches. The focus is not on “fixing” the body, but on opening a space for awareness, regulation, and integration.',
       p4: 'It is not a typical massage. Breath, presence, touch, and conscious body awareness are all essential parts of the work.',

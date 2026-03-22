@@ -37,9 +37,6 @@ export default function App() {
               <span className={styles.heroPractitioner}>{tr.hero.practitioner}</span>
             </h1>
             <p className={styles.heroTagline}>{tr.hero.tagline}</p>
-            {tr.hero.supportingLine ? (
-              <p className={styles.heroSupporting}>{tr.hero.supportingLine}</p>
-            ) : null}
             <div className={styles.ctaRow}>
               <Button href="#contact">{tr.hero.book}</Button>
               <Button href="#contact" variant="secondary">
