@@ -137,7 +137,7 @@ export function HomePage() {
         </Reveal>
       </div>
 
-      <Section id="session" variant="spacious">
+      <Section id="session" variant="spaciousTightBottom">
         <Reveal>
           <Heading level={2}>{tr.session.heading}</Heading>
           <div className={styles.proseStack}>
@@ -149,7 +149,7 @@ export function HomePage() {
         </Reveal>
       </Section>
 
-      <Section id="offering" variant="spacious">
+      <Section id="offering" variant="spaciousTightTop">
         <Reveal>
           <Heading level={2}>{tr.offering.heading}</Heading>
           <div className={styles.formatCards}>

@@ -28,6 +28,18 @@
   padding-block: var(--space-2xl);
 }
 
+/* Pair with spaciousTightTop: less bottom padding so two spacious sections don’t double the gap */
+.spaciousTightBottom {
+  padding-block-start: var(--space-2xl);
+  padding-block-end: var(--space-lg);
+}
+
+/* Pair after spaciousTightBottom (or any block): less top padding, normal bottom */
+.spaciousTightTop {
+  padding-block-start: var(--space-lg);
+  padding-block-end: var(--space-2xl);
+}
+
 .tightTop {
   padding-block-start: var(--space-md);
   padding-block-end: var(--space-xl);
@@ -48,5 +60,15 @@
 
   .spacious {
     padding-block: var(--space-3xl);
+  }
+
+  .spaciousTightBottom {
+    padding-block-start: var(--space-3xl);
+    padding-block-end: var(--space-xl);
+  }
+
+  .spaciousTightTop {
+    padding-block-start: var(--space-xl);
+    padding-block-end: var(--space-3xl);
   }
 }
