@@ -129,6 +129,68 @@ export const translations = {
     footer: {
       name: 'Elias Krause',
       tag: 'Rebalancing',
+      photosCredit: 'Fotos: Yuval Kovo',
+      legalNavLabel: 'Rechtliches',
+      linkPrivacy: 'Datenschutz',
+      linkImprint: 'Impressum',
+    },
+    legal: {
+      backToHome: 'Zur Startseite',
+      privacy: {
+        heading: 'Datenschutzerklärung',
+        sections: [
+          {
+            title: '1. Verantwortlicher',
+            body: 'Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Elias Krause. Die Kontaktdaten entnehmen Sie bitte dem Impressum.',
+          },
+          {
+            title: '2. Aufruf der Website / Hosting',
+            body: 'Wenn Sie diese Website besuchen, werden durch Ihren Browser technisch notwendige Informationen an den Server übermittelt (z. B. Browsertyp, Datum und Uhrzeit der Anfrage). Der Anbieter des Webhostings kann dabei Zugriffs- bzw. Server-Logdaten verarbeiten, die zur sicheren und stabilen Bereitstellung der Seite erforderlich sind. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen Website).',
+          },
+          {
+            title: '3. Google Fonts',
+            body: 'Die Website lädt Schriftarten („Google Fonts“) von der Google Ireland Limited bzw. Google LLC (USA). Dabei ruft Ihr Browser Dateien von Google-Servern ab; dabei kann Ihre IP-Adresse an Google übermittelt werden. Google kann diese Daten gemäß eigenen Datenschutzregeln verarbeiten. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem einheitlichen, gut lesbaren Auftritt). Weitere Informationen: https://policies.google.com/privacy',
+          },
+          {
+            title: '4. Kontakt per E-Mail',
+            body: 'Es gibt auf dieser Website kein eingebettetes Kontaktformular. Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Daten (z. B. Absenderadresse, Inhalt der Nachricht) zur Bearbeitung der Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO.',
+          },
+          {
+            title: '5. Spracheinstellung (lokaler Speicher)',
+            body: 'Die gewählte Sprachversion (Deutsch/Englisch) wird in Ihrem Browser im lokalen Speicher (localStorage) abgelegt, damit die Auswahl beim nächsten Besuch erhalten bleibt. Es werden keine Werbe- oder Analyse-Cookies gesetzt. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.',
+          },
+          {
+            title: '6. Keine Analyse-Tools, keine nicht notwendigen Cookies',
+            body: 'Es werden keine Analyse- oder Marketing-Tools eingesetzt und keine nicht notwendigen Cookies Dritter zu Werbezwecken genutzt.',
+          },
+          {
+            title: '7. Ihre Rechte',
+            body: 'Sie haben nach Maßgabe der DSGVO Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen. Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.',
+          },
+          {
+            title: '8. Urheberrecht',
+            body: 'Texte, redaktionelle Inhalte und die Gestaltung dieser Website sind urheberrechtlich geschützt. Die Fotografien werden mit Namensnennung des Fotografen im Footer genutzt; eine weitergehende Nutzung ist ohne Zustimmung nicht gestattet.',
+          },
+        ],
+      },
+      imprint: {
+        heading: 'Impressum',
+        contactHeading: 'Kontakt',
+        sections: [
+          {
+            title: 'Angaben gemäß § 5 DDG / TMG',
+            body: 'Elias Krause\n[Bitte hier die vollständige ladungsfähige Anschrift ergänzen.]',
+          },
+          {
+            title: 'Verantwortlich für den Inhalt',
+            body: 'Elias Krause (Anschrift wie oben)',
+          },
+          {
+            title: 'Haftung für Inhalte und Links',
+            body: 'Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität wird keine Gewähr übernommen. Für externe Links gilt: Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar; auf spätere Änderungen der verlinkten Seiten besteht kein Einfluss.',
+          },
+        ],
+      },
     },
     galleryLabel: 'Impressionen aus der Praxis',
   },
@@ -259,6 +321,68 @@ export const translations = {
     footer: {
       name: 'Elias Krause',
       tag: 'Rebalancing',
+      photosCredit: 'Photos by Yuval Kovo',
+      legalNavLabel: 'Legal',
+      linkPrivacy: 'Privacy policy',
+      linkImprint: 'Legal notice',
+    },
+    legal: {
+      backToHome: 'Back to home',
+      privacy: {
+        heading: 'Privacy policy',
+        sections: [
+          {
+            title: '1. Controller',
+            body: 'The party responsible for processing personal data on this website within the meaning of the GDPR is Elias Krause. Please see the legal notice (Imprint page) for contact details.',
+          },
+          {
+            title: '2. Visiting this website / hosting',
+            body: 'When you visit the site, your browser automatically sends technically necessary information to the server (for example browser type, time of the request). The web hosting provider may process access or server log data as needed to deliver the site securely and reliably. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a functioning website).',
+          },
+          {
+            title: '3. Google Fonts',
+            body: 'This site loads fonts (“Google Fonts”) from Google Ireland Limited / Google LLC (USA). Your browser requests files from Google’s servers; your IP address may be transmitted to Google, which may process data under its own policies. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in readable, consistent typography). Further information: https://policies.google.com/privacy',
+          },
+          {
+            title: '4. Contact by email',
+            body: 'There is no embedded contact form on this site. If you email us, we process the data you send (such as your address and message content) to handle your request. Legal basis: Art. 6(1)(b) GDPR (pre-contractual steps) and/or Art. 6(1)(f) GDPR.',
+          },
+          {
+            title: '5. Language preference (local storage)',
+            body: 'Your selected language (German/English) is stored in your browser’s local storage so the choice persists on your next visit. No advertising or analytics cookies are used for this. Legal basis: Art. 6(1)(f) GDPR.',
+          },
+          {
+            title: '6. No analytics or non-essential third-party cookies',
+            body: 'This site does not use analytics or marketing tools, and it does not use non-essential third-party cookies for advertising.',
+          },
+          {
+            title: '7. Your rights',
+            body: 'Where the GDPR applies, you have rights of access, rectification, erasure, restriction of processing, data portability, and objection to certain processing. You also have the right to lodge a complaint with a supervisory authority.',
+          },
+          {
+            title: '8. Copyright',
+            body: 'Text, editorial content, and the design of this website are protected by copyright. Photographs are credited to the photographer in the footer; any further use requires permission.',
+          },
+        ],
+      },
+      imprint: {
+        heading: 'Legal notice',
+        contactHeading: 'Contact',
+        sections: [
+          {
+            title: 'Information provided under applicable law',
+            body: 'Elias Krause\n[Please add your full postal address here where required.]',
+          },
+          {
+            title: 'Responsible for content',
+            body: 'Elias Krause (address as above)',
+          },
+          {
+            title: 'Liability for content and links',
+            body: 'Content on this site is prepared with care; no guarantee is given for completeness, accuracy, or timeliness. For external links: linked pages were checked when the link was set; there is no control over later changes to those sites.',
+          },
+        ],
+      },
     },
     galleryLabel: 'Impressions from practice',
   },

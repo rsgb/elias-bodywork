@@ -1,15 +1,16 @@
 import { useEffect, useId, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useTranslations } from '../../context/LanguageContext'
 import { LanguageSwitch } from '../LanguageSwitch/LanguageSwitch'
 import styles from './Navbar.module.css'
 
 const linkDefs = [
-  { href: '#intro', key: 'intro' },
-  { href: '#about', key: 'about' },
-  { href: '#support', key: 'support' },
-  { href: '#session', key: 'session' },
-  { href: '#offering', key: 'offering' },
-  { href: '#contact', key: 'contact' },
+  { hash: 'intro', key: 'intro' },
+  { hash: 'about', key: 'about' },
+  { hash: 'support', key: 'support' },
+  { hash: 'session', key: 'session' },
+  { hash: 'offering', key: 'offering' },
+  { hash: 'contact', key: 'contact' },
 ]
 
 export function Navbar() {
@@ -65,9 +66,9 @@ export function Navbar() {
     <header className={[styles.header, scrolled ? styles.scrolled : ''].filter(Boolean).join(' ')}>
       <nav className={styles.nav} aria-label="Primary">
         <div className={styles.navStart}>
-          <a href="#hero" className={styles.brand} onClick={closeMenu}>
+          <Link to="/" className={styles.brand} onClick={closeMenu}>
             {tr.nav.brand}
-          </a>
+          </Link>
         </div>
 
         <ul
@@ -75,11 +76,11 @@ export function Navbar() {
           className={[styles.list, menuOpen ? styles.listOpen : ''].filter(Boolean).join(' ')}
           aria-hidden={isNarrow && !menuOpen ? true : undefined}
         >
-          {linkDefs.map(({ href, key }) => (
-            <li key={href} className={styles.listItem}>
-              <a href={href} className={styles.link} onClick={closeMenu}>
+          {linkDefs.map(({ hash, key }) => (
+            <li key={key} className={styles.listItem}>
+              <Link to={`/#${hash}`} className={styles.link} onClick={closeMenu}>
                 {tr.nav[key]}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
