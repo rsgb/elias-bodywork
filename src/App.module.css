@@ -87,6 +87,25 @@
   letter-spacing: 0.02em;
 }
 
+.heroHeadline {
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-serif);
+  font-size: clamp(1.15rem, 3.2vw, 1.45rem);
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--color-text);
+  max-width: 36rem;
+}
+
+.heroSubhead {
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--color-text-soft);
+  max-width: var(--content-max);
+}
+
 .ctaRow {
   display: flex;
   flex-wrap: wrap;
@@ -219,15 +238,15 @@
   margin-bottom: 0;
 }
 
-.cardsTwo {
+.formatCards {
   display: grid;
   gap: var(--space-md);
   margin-top: var(--space-lg);
 }
 
-@media (min-width: 640px) {
-  .cardsTwo {
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 768px) {
+  .formatCards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

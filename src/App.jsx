@@ -36,12 +36,12 @@ export default function App() {
               <span className={styles.heroName}>{tr.hero.name}</span>
               <span className={styles.heroSubtitle}>{tr.hero.subtitle}</span>
             </h1>
-            <Text lead>{tr.hero.lead}</Text>
-            <Text muted>{tr.hero.muted}</Text>
+            <p className={styles.heroHeadline}>{tr.hero.headline}</p>
+            <p className={styles.heroSubhead}>{tr.hero.subheadline}</p>
             <div className={styles.ctaRow}>
               <Button href="#contact">{tr.hero.book}</Button>
               <Button href="#contact" variant="secondary">
-                {tr.hero.contact}
+                {tr.hero.secondaryCta}
               </Button>
             </div>
           </div>
@@ -56,6 +56,7 @@ export default function App() {
               <p>{tr.intro.p1}</p>
               <p>{tr.intro.p2}</p>
               <p>{tr.intro.p3}</p>
+              <p>{tr.intro.p4}</p>
             </div>
           </Reveal>
         </Section>
@@ -128,7 +129,6 @@ export default function App() {
               <p>{tr.session.p2}</p>
               <p>{tr.session.p3}</p>
               <p>{tr.session.p4}</p>
-              <p>{tr.session.p5}</p>
             </div>
           </Reveal>
         </Section>
@@ -136,16 +136,24 @@ export default function App() {
         <Section id="offering" variant="spacious">
           <Reveal>
             <Heading level={2}>{tr.offering.heading}</Heading>
-            <div className={styles.cardsTwo}>
+            <div className={styles.formatCards}>
               <article className={styles.card}>
                 <h3 className={styles.cardTitle}>{tr.offering.cardIndividualTitle}</h3>
                 <p>{tr.offering.cardIndividualBody}</p>
+              </article>
+              <article className={styles.card}>
+                <h3 className={styles.cardTitle}>{tr.offering.cardSeriesTitle}</h3>
+                <p>{tr.offering.cardSeriesBody}</p>
               </article>
               <article className={styles.card}>
                 <h3 className={styles.cardTitle}>{tr.offering.cardRhythmTitle}</h3>
                 <p>{tr.offering.cardRhythmBody}</p>
               </article>
             </div>
+
+            <h3 className={styles.subheading}>{tr.series.heading}</h3>
+            <p className={styles.seriesIntro}>{tr.series.intro}</p>
+            <SessionSeriesAccordion sessions={tr.series.sessions} />
 
             <h3 className={styles.subheading}>{tr.pricing.heading}</h3>
             <p className={styles.seriesIntro}>{tr.pricing.intro}</p>
@@ -158,10 +166,6 @@ export default function App() {
               ))}
             </div>
             <p className={styles.pricingFootnote}>{tr.pricing.footnote}</p>
-
-            <h3 className={styles.subheading}>{tr.series.heading}</h3>
-            <p className={styles.seriesIntro}>{tr.series.intro}</p>
-            <SessionSeriesAccordion sessions={tr.series.sessions} />
           </Reveal>
         </Section>
 
@@ -190,24 +194,20 @@ export default function App() {
                 <Text>{tr.contact.intro}</Text>
                 <ul className={styles.contactList}>
                   <li>
-                    <span className={styles.contactLabel}>{tr.contact.email}</span>
-                    <a href={`mailto:${contact.email}`}>{contact.email}</a>
-                  </li>
-                  <li>
-                    <span className={styles.contactLabel}>{tr.contact.phone}</span>
+                    <span className={styles.contactLabel}>{tr.contact.phoneLabel}</span>
                     <a href={`tel:${contact.phoneTel}`}>{contact.phoneDisplay}</a>
                   </li>
                   <li>
-                    <span className={styles.contactLabel}>{tr.contact.location}</span>
-                    <span>{tr.contact.locationValue}</span>
+                    <span className={styles.contactLabel}>{tr.contact.emailLabel}</span>
+                    <a href={`mailto:${contact.email}`}>{contact.email}</a>
                   </li>
                   <li>
-                    <span className={styles.contactLabel}>{tr.contact.languages}</span>
+                    <span className={styles.contactLabel}>{tr.contact.languagesLabel}</span>
                     <span>{tr.contact.languagesValue}</span>
                   </li>
                 </ul>
                 <div className={styles.contactActions}>
-                  <Button href={`mailto:${contact.email}`}>{tr.hero.contact}</Button>
+                  <Button href={`mailto:${contact.email}`}>{tr.hero.book}</Button>
                   <Button href={`tel:${contact.phoneTel}`} variant="secondary">
                     {contact.phoneDisplay}
                   </Button>
@@ -250,8 +250,6 @@ export default function App() {
             <p className={styles.footerTag}>{tr.footer.tag}</p>
             <p className={styles.footerContact}>
               <a href={`mailto:${contact.email}`}>{contact.email}</a>
-              {' · '}
-              <a href={`tel:${contact.phoneTel}`}>{contact.phoneDisplay}</a>
             </p>
             <p className={styles.footerCopy}>
               © {year} {tr.footer.name}

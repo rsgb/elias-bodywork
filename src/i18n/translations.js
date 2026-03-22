@@ -1,25 +1,21 @@
 /**
- * All user-facing copy per language. Default site language: German (de).
- *
- * Ten-session themes were taken from the Rebalancing flyer in `/temp/Flyer.pdf`
- * (Katharina Krause / Rebalancing Murnau) and adapted for Elias’s site.
- *
- * Update prices in `pricing.items` (both `de` and `en`).
- * Update session copy in `series.sessions` per language.
+ * Site copy — German (default) and English.
+ * Prices: `pricing.items` (both languages).
+ * Ten-session accordion: `series.sessions` (8 rows; sessions 8–10 merged).
  */
 export const translations = {
   de: {
     meta: {
       title: 'Elias Krause — Rebalancing',
       description:
-        'Rebalancing und Faszienarbeit mit Elias Krause — Raum für Wahrnehmung, Erdung und Balance.',
+        'Rebalancing-Sitzungen für mehr Wahrnehmung, Erdung und Kontakt mit dem eigenen Körper — Elias Krause.',
     },
     nav: {
-      intro: 'Praxis',
+      intro: 'Rebalancing',
       about: 'Über mich',
       support: 'Unterstützung',
       session: 'Ablauf',
-      offering: 'Sitzungen & Preise',
+      offering: 'Formate & Preise',
       contact: 'Kontakt',
       menu: 'Menü',
       openMenu: 'Menü öffnen',
@@ -30,61 +26,66 @@ export const translations = {
     hero: {
       name: 'Elias Krause',
       subtitle: 'Rebalancing',
-      lead: 'Ein Raum, um langsamer zu werden, zuzuhören und wieder Kontakt mit dem eigenen Körper zu finden.',
-      muted: 'Sitzungen, die Entspannung, Körperwahrnehmung, Erdung und innere Balance unterstützen.',
+      headline:
+        'Rebalancing-Sitzungen für mehr Wahrnehmung, Erdung und Kontakt mit dem eigenen Körper',
+      subheadline:
+        'Ein Raum, um langsamer zu werden, anzukommen und wieder mehr mit dem eigenen Körper in Verbindung zu kommen.',
       book: 'Sitzung anfragen',
-      contact: 'Kontakt',
+      secondaryCta: 'Kontakt aufnehmen',
     },
     intro: {
-      heading: 'Was das ist',
-      p1: 'Rebalancing ist eine Form von Körperarbeit, die mit dem Faszien­system arbeitet — dem Netz des Bindegewebes, das den ganzen Körper durchzieht. Es ist beeinflusst von Rolfing, kraniosakraler Arbeit und der Rebalancing-Tradition, die aus der Zusammenarbeit von Körperarbeitenden und Therapeutinnen entstanden ist.',
-      p2: 'In dieser Arbeit geht es beim Berühren nicht darum, den Körper zu „reparieren“, sondern darum, Bedingungen für Wahrnehmung, Regulation und Integration zu schaffen.',
-      p3: 'Das ist keine klassische Massage. Atem, Präsenz, Wahrnehmung und die Art, wie Sie sich im Körper erleben, gehören zum Prozess dazu.',
+      heading: 'Was ist Rebalancing?',
+      p1: 'Rebalancing ist eine integrative Faszien- und Körperarbeit. Mit achtsamer Berührung und langsamen, gezielten Strichen wird mit oberflächlichen und tieferen Bindegewebsstrukturen gearbeitet — mit dem Fasziennetz, das den ganzen Körper durchzieht.',
+      p2: 'Faszien verbinden Knochen, Muskeln, Gelenke, Organe und Gefässe miteinander. Sie geben dem Körper Halt und Beweglichkeit und reagieren sensibel auf Belastung, Spannung und innere Zustände.',
+      p3: 'Rebalancing hat Einflüsse unter anderem aus Rolfing, craniosacraler Arbeit und weiteren körpertherapeutischen Ansätzen. Im Mittelpunkt steht nicht, den Körper zu „reparieren“, sondern einen Raum für Wahrnehmung, Regulation und Integration zu öffnen.',
+      p4: 'Es ist keine klassische Massage. Atem, Präsenz, Berührung und die bewusste Wahrnehmung des eigenen Körpers sind wesentliche Bestandteile der Arbeit.',
     },
     about: {
-      heading: 'Über Elias',
-      p1: 'Mich zieht es seit langem zur Körperarbeit — im eigenen Erleben und in der Begleitung anderer durch Berührung. Zu Rebalancing hat mich die Qualität geführt, die ich darin erfahren habe: Präsenz, Tiefe, und eine Art zu arbeiten, die weniger technisch wirkte und stärker einem Eintreten in den Dialog mit dem System einer anderen Person entsprach.',
-      p2: 'Ich habe eine zweijährige Rebalancing-Ausbildung in Deutschland und der Schweiz abgeschlossen und vertiefe diesen Weg derzeit durch Assistenz in der Ausbildung selbst.',
-      p3: 'Für mich geht es darin ums genaue Zuhören, mit dem zu arbeiten, was gerade da ist, und Menschen darin zu unterstützen, mit sich selbst verbundener zu werden.',
+      heading: 'Über mich',
+      p1: 'Ich bin seit Langem von Körperarbeit angezogen und von der Möglichkeit, Menschen durch Berührung in ihrem Wohlbefinden zu unterstützen. Zum Rebalancing hat mich besonders die Qualität dieser Arbeit geführt: Präsenz, Tiefe und die Erfahrung, dass Berührung mehr sein kann als Technik — nämlich ein achtsamer Kontakt mit dem, was im Körper gerade da ist.',
+      p2: 'Meine Ausbildung habe ich über zwei Jahre in Deutschland und der Schweiz gemacht. Zurzeit begleite ich als Assistent einen weiteren Ausbildungszyklus, was meinen eigenen Weg weiter vertieft.',
+      p3: 'In meiner Arbeit geht es mir darum, aufmerksam zuzuhören, mit dem zu arbeiten, was tatsächlich gegenwärtig ist, und Menschen dabei zu unterstützen, mehr Kontakt zu sich selbst zu finden.',
     },
     support: {
-      heading: 'Wobei diese Arbeit unterstützen kann',
-      intro: 'Menschen kommen aus unterschiedlichen Gründen, unter anderem:',
-      note: 'Es geht nicht darum zu diagnostizieren, Krankheiten zu behandeln oder Heilung zu versprechen, sondern unterstützende Körperarbeit und einen Raum für Wahrnehmung und Regulation anzubieten.',
+      heading: 'Wobei Rebalancing unterstützen kann',
+      intro: 'Menschen kommen aus unterschiedlichen Gründen zu einer Sitzung. Zum Beispiel:',
+      note: 'Rebalancing dient der Körperwahrnehmung, Entspannung und Begleitung. Es ersetzt keine medizinische Behandlung und beinhaltet weder Diagnose noch Heilversprechen.',
     },
     supportReasons: [
-      'Entspannung und Entschleunigung',
-      'Stress und Überforderung',
-      'mehr Feingefühl für den Körper',
-      'Erdung und Balance',
-      'Persönlichkeitsentwicklung',
-      'Begleitung in herausfordernden Lebensphasen',
-      'Integration nach körperlicher Belastung oder Verletzung',
-      'Begleitung neben ärztlicher oder therapeutischer Behandlung',
-      'Übergänge, Veränderung oder Vorbereitung',
+      'bei muskulären Verspannungen',
+      'zur Entspannung von Rücken und Wirbelsäule',
+      'zur Förderung der Beweglichkeit von Gelenken, zum Beispiel Hüfte, Schulter oder Knie',
+      'bei Stress und dem Wunsch nach Entschleunigung',
+      'zur Stärkung des Körperausdrucks',
+      'zur Unterstützung der Regeneration, zum Beispiel nach Operationen oder Verletzungen',
+      'präventiv und vorbeugend',
+      'in herausfordernden Lebensphasen',
+      'zur Begleitung neben einer medizinischen Behandlung',
+      'in Zeiten von Veränderung, Übergang oder Neuorientierung',
     ],
     session: {
-      heading: 'Was in einer Sitzung passiert',
-      p1: 'Jede Sitzung verläuft anders. Viele gehen gebundener, näher bei sich, ausgewogener oder entspannter. Für andere kann sich die Erfahrung auch aktivierend anfühlen.',
-      p2: 'Weil die Arbeit das Nervensystem tief berühren kann, ist es hilfreich, danach etwas Raum zu lassen statt sofort in den nächsten Termin zu hetzen.',
-      p3: 'Eine Sitzung dauert in der Regel etwa 90 Minuten. Sie beginnt oft mit einem kurzen Gespräch und manchmal mit einer stillen Ankommen-Phase.',
-      p4: 'Darauf können Körperwahrnehmung, Haltungsbeobachtung und manuelle Arbeit folgen. Es geht nicht darum, eine äußere Deutung zu erzwingen, sondern wahrzunehmen, was sich in Ihrer Erfahrung gerade zeigt.',
-      p5: 'Die Berührung kann fein oder kräftiger sein. Sie kann unbequeme Bereiche berühren, ohne dass Intensität um ihrer selbst willen das Ziel ist. Mehr Druck ist nicht „besser“. Es geht um Kontakt, Präsenz und das, was der Körper gerade tragen kann.',
+      heading: 'Wie eine Sitzung abläuft',
+      p1: 'Eine Sitzung dauert in der Regel etwa 90 Minuten, längere oder kürzere Formate sind nach Absprache ebenfalls möglich. Sie beginnt meist mit einem kurzen Gespräch und manchmal mit einem stillen Moment, um mehr im gegenwärtigen Moment anzukommen.',
+      p2: 'Danach können Körperwahrnehmung, ein einfaches Body Reading im Stehen und die Arbeit mit Berührung Teil der Sitzung sein. Im Mittelpunkt steht nicht eine äussere Deutung, sondern die Frage, was im Moment tatsächlich wahrnehmbar und lebendig ist.',
+      p3: 'Die Berührung kann sehr fein oder auch direkter sein — je nachdem, was gerade sinnvoll ist. Entscheidend ist nicht Intensität, sondern Präsenz, Kommunikation und das, was der Körper in diesem Moment aufnehmen kann.',
+      p4: 'Viele Menschen erleben nach einer Sitzung mehr Ruhe, Erdung, innere Klarheit oder einen stärkeren Kontakt zu sich selbst. Andere erleben die Arbeit als belebend oder aktivierend. Es kann hilfreich sein, sich danach etwas Zeit zu lassen, bevor man direkt in den nächsten Termin geht.',
     },
     offering: {
-      heading: 'Format der Sitzungen',
+      heading: 'Formate',
       cardIndividualTitle: 'Einzelsitzungen',
       cardIndividualBody:
-        'Einzelsitzungen sind möglich und können sich an dem orientieren, was Sie gerade bewegt.',
+        'Bei akuten körperlichen Spannungen oder bestimmten Themen können Einzelsitzungen sinnvoll sein. Sie orientieren sich an dem, was bei Dir gerade im Vordergrund steht.',
+      cardSeriesTitle: '10er-Serie',
+      cardSeriesBody:
+        'Die klassische Rebalancing-Arbeit ist in zehn aufeinander aufbauende Sitzungen gegliedert. Jede Sitzung widmet sich einem bestimmten Körperbereich und einem damit verbundenen Lebensthema. So kann über mehrere Termine hinweg ein tieferer Prozess von Wahrnehmung, Ausrichtung und Integration entstehen.',
       cardRhythmTitle: 'Rhythmus',
       cardRhythmBody:
-        'Der Abstand zwischen den Sitzungen hängt von Person und Prozess ab. Etwa zwei Wochen können eine Orientierung sein — variabel.',
+        'Zwischen zwei Sitzungen kann ein Abstand von etwa zwei Wochen sinnvoll sein. Der genaue Rhythmus hängt jedoch immer von der individuellen Situation und vom gemeinsamen Empfinden ab.',
     },
     pricing: {
       heading: 'Preise',
       intro: 'Rebalancing-Sitzungen',
-      footnote:
-        'Wenn die Kosten eine Hürde sind, sprechen Sie mich gerne an — es gibt oft eine Lösung.',
+      footnote: 'Wenn die Kosten gerade ein Hindernis sind, melde Dich gern trotzdem.',
       items: [
         { duration: '60 Minuten', price: '90 €' },
         { duration: '90 Minuten', price: '120 €' },
@@ -92,73 +93,45 @@ export const translations = {
       ],
     },
     series: {
-      heading: 'Die zehn Sitzungen',
+      heading: 'Die 10 Sitzungen im Überblick',
       intro:
-        'Rebalancing ist traditionell in zehn aufeinander bezogene Sitzungen mit je einem thematischen Schwerpunkt gegliedert. Einzelsitzungen sind jederzeit möglich; für wiederkehrende Muster oder den Wunsch nach vertiefter Arbeit kann eine Serie von zehn Sitzungen ein sinnvoller Rahmen sein. Die folgenden Themen orientieren sich an der klassischen Rebalancing-Reihe (Inhalt angelehnt an öffentliche Rebalancing-Materialien).',
-      sourceNote: '',
+        'Die 10er-Serie ist das Herzstück der Rebalancing-Arbeit. Jede Sitzung hat ihren eigenen körperlichen Schwerpunkt und ein dazugehöriges Thema.',
       sessions: [
+        { title: '1. Brustkorb & Zwerchfell', body: 'Inspiration, Aufrichtung, Atmen.' },
+        { title: '2. Beine', body: 'Meinen Standpunkt finden, zu mir stehen.' },
         {
-          title: '1 — Brustkorb & Zwerchfell',
-          body: 'Inspiration, Aufrichtung, Atmung.',
-        },
-        {
-          title: '2 — Beine',
-          body: 'Den eigenen Standpunkt finden, zu sich stehen.',
-        },
-        {
-          title: '3 — Schultern',
+          title: '3. Schultern',
           body: 'Geben und Nehmen, Grenzen wahrnehmen, in Beziehung treten.',
         },
+        { title: '4. Becken', body: 'Kontrolle und Hingabe, Tragen und Getragen werden.' },
+        { title: '5. Bauch', body: 'Ins Zentrum kommen, Vertrauen, Verdauen, Selbstannahme.' },
+        { title: '6. Rücken', body: 'Aufrichtigkeit und Zurückhaltung.' },
+        { title: '7. Kopf', body: 'Wahrnehmung und Veränderung.' },
         {
-          title: '4 — Becken',
-          body: 'Kontrolle und Hingabe, Tragen und Getragen werden.',
-        },
-        {
-          title: '5 — Bauch',
-          body: 'Ins Zentrum kommen, Vertrauen, Verdauen, Selbstannahme.',
-        },
-        {
-          title: '6 — Rücken',
-          body: 'Aufrichtigkeit und Zurückhaltung.',
-        },
-        {
-          title: '7 — Kopf',
-          body: 'Wahrnehmung und Veränderung.',
-        },
-        {
-          title: '8 — Integration',
-          body: 'Zusammenhänge zwischen den Körperregionen vertiefen — erste Integration der Reihe.',
-        },
-        {
-          title: '9 — Integration',
-          body: 'Die Teile zusammenführen und zu einem erfahrbaren Ganzen verbinden.',
-        },
-        {
-          title: '10 — Integration',
-          body: 'Ganzheit spüren und Freiheit in Verbundenheit — Abschluss der Serie.',
+          title: '8–10. Integration',
+          body: 'Die Teile zusammenbringen, ganz werden, frei sein in Verbundenheit.',
         },
       ],
     },
     imageBand: {
-      quote: 'Achtsame Berührung, langsames Tempo, Raum für Ihre Wahrnehmung.',
+      quote: 'Eine Einladung, Deinem Körper tiefer zuzuhören.',
     },
     contact: {
       heading: 'Kontakt',
-      intro: 'Wenn Sie eine Sitzung anfragen oder eine Frage stellen möchten, schreiben Sie mir gern.',
-      email: 'E-Mail',
-      phone: 'Telefon / Signal / WhatsApp',
-      location: 'Ort',
-      locationValue: 'Auf Anfrage',
-      languages: 'Sprachen',
+      intro:
+        'Wenn Du eine Sitzung anfragen möchtest oder eine Frage hast, freue ich mich über Deine Nachricht.',
+      phoneLabel: 'Telefon',
+      emailLabel: 'E-Mail',
+      languagesLabel: 'Sprachen',
       languagesValue: 'Deutsch, Englisch',
     },
     ctaBand: {
-      text: 'Lust, einen ersten Schritt zu wagen?',
+      text: 'Ich freue mich auf deine Nachricht.',
       button: 'Sitzung anfragen',
     },
     disclaimer: {
       heading: 'Hinweis',
-      body: 'Diese Arbeit wird als Körperarbeit für Wohlbefinden, Entspannung und Wahrnehmung angeboten. Sie ist keine medizinische Behandlung, ersetzt keine ärztliche Versorgung und beinhaltet weder Diagnosen noch Heilversprechen. Bei akuten oder schwerwiegenden gesundheitlichen Fragen wenden Sie sich bitte an die passenden Fachpersonen.',
+      body: 'Diese Arbeit wird als Körperarbeit für Wohlbefinden, Entspannung und Wahrnehmung angeboten. Sie ist keine medizinische Behandlung und ersetzt keine ärztliche, physiotherapeutische oder psychotherapeutische Begleitung. Es werden keine Diagnosen gestellt und keine Heilversprechen gegeben. Bei akuten oder ernsthaften gesundheitlichen Beschwerden wende Dich bitte an eine entsprechend qualifizierte Fachperson.',
     },
     footer: {
       name: 'Elias Krause',
@@ -171,14 +144,14 @@ export const translations = {
     meta: {
       title: 'Elias Krause — Rebalancing',
       description:
-        'Rebalancing and fascia-informed bodywork with Elias Krause — space for awareness, grounding, and balance.',
+        'Rebalancing sessions for grounding, awareness, and deeper contact with your body — Elias Krause.',
     },
     nav: {
-      intro: 'Practice',
+      intro: 'Rebalancing',
       about: 'About',
       support: 'Support',
       session: 'Session',
-      offering: 'Sessions & prices',
+      offering: 'Formats & prices',
       contact: 'Contact',
       menu: 'Menu',
       openMenu: 'Open menu',
@@ -189,133 +162,112 @@ export const translations = {
     hero: {
       name: 'Elias Krause',
       subtitle: 'Rebalancing',
-      lead: 'A space to slow down, listen, and come back into contact with your body.',
-      muted: 'Sessions that support relaxation, body awareness, grounding, and inner balance.',
+      headline:
+        'Rebalancing sessions for grounding, awareness, and deeper contact with your body',
+      subheadline:
+        'A space to slow down, arrive, and come back into closer contact with your body.',
       book: 'Book a session',
-      contact: 'Get in touch',
+      secondaryCta: 'Get in touch',
     },
     intro: {
-      heading: 'What this is',
-      p1: 'Rebalancing is a form of bodywork that engages the fascia system — the connective tissue network that runs through the whole body. It is influenced by Rolfing, craniosacral work, and the Rebalancing tradition that grew from collaboration between bodyworkers and therapists.',
-      p2: 'In this work, touch is not about “fixing” the body, but about creating the conditions for awareness, regulation, and integration.',
-      p3: 'This is not a typical massage. Breath, presence, perception, and how you experience yourself in your body are all part of the process.',
+      heading: 'What is Rebalancing?',
+      p1: 'Rebalancing is an integrative form of fascia and bodywork. Through attentive touch and slow, precise strokes, it works with superficial and deeper connective tissue structures — with the fascial network that runs through the whole body.',
+      p2: 'Fascia connects bones, muscles, joints, organs, and vessels. It gives the body support and mobility, and it responds sensitively to strain, tension, and inner states.',
+      p3: 'Rebalancing has been shaped by influences such as Rolfing, craniosacral work, and other body-based therapeutic approaches. The focus is not on “fixing” the body, but on opening a space for awareness, regulation, and integration.',
+      p4: 'It is not a typical massage. Breath, presence, touch, and conscious body awareness are all essential parts of the work.',
     },
     about: {
-      heading: 'About Elias',
-      p1: 'I have long been drawn to bodywork — in my own experience and in supporting others through touch. What brought me to Rebalancing was the quality I found there: presence, depth, and a way of working that felt less mechanical than applying a technique — more entering into dialogue with another person’s system.',
-      p2: 'I completed a two-year Rebalancing training in Germany and Switzerland, and I continue to deepen this path by assisting in the training itself.',
-      p3: 'For me, this work is about listening carefully, meeting what is actually present, and supporting people in becoming more connected with themselves.',
+      heading: 'About me',
+      p1: 'I have long felt drawn to bodywork and to supporting people through touch. What brought me especially to Rebalancing was the quality I experienced in it: presence, depth, and the sense that touch can be more than technique — it can be a careful contact with what is actually present in the body.',
+      p2: 'I completed my training over two years in Germany and Switzerland. At the moment, I am also assisting in another training cycle, which continues to deepen my own path and understanding.',
+      p3: 'In my work, I try to listen carefully, work with what is truly present, and support people in finding a deeper connection with themselves.',
     },
     support: {
-      heading: 'What this work can support',
-      intro: 'People come for many different reasons, including:',
-      note: 'The intention is not to diagnose, treat disease, or promise healing, but to offer supportive bodywork and a space for awareness and regulation.',
+      heading: 'What Rebalancing can support',
+      intro: 'People come to a session for many different reasons. For example:',
+      note: 'Rebalancing is offered as supportive bodywork for awareness, relaxation, and accompaniment. It does not replace medical care and does not include diagnosis or promises of healing.',
     },
     supportReasons: [
-      'relaxation and slowing down',
-      'stress and overwhelm',
-      'feeling more attuned to the body',
-      'grounding and balance',
-      'personal development',
-      'support during challenging life phases',
-      'integration after physical strain or injury',
-      'accompaniment alongside conventional medical care',
-      'moments of transition, change, or preparation',
+      'muscular tension',
+      'relaxation for the back and spine',
+      'improving mobility in the joints, for example the hips, shoulders, or knees',
+      'stress relief and slowing down',
+      'strengthening body expression',
+      'supporting regeneration, for example after operations or injuries',
+      'prevention and ongoing care',
+      'during challenging phases of life',
+      'alongside conventional medical treatment',
+      'during times of change, transition, or reorientation',
     ],
     session: {
       heading: 'What happens in a session',
-      p1: 'Each session unfolds differently. Many people leave feeling more grounded, more in touch with themselves, more balanced, or more relaxed. For others, the experience can also feel energising.',
-      p2: 'Because the work can touch the nervous system deeply, it helps to leave some spaciousness afterwards rather than rushing straight into the next thing.',
-      p3: 'A session is usually around ninety minutes. It often begins with a short conversation, and sometimes with a quiet moment to arrive more fully in the present.',
-      p4: 'From there, the work may include body awareness, posture observation, and hands-on touch. The focus is not on imposing an outside interpretation, but on sensing what is present in your experience right now.',
-      p5: 'Touch may be subtle or more direct. It may meet areas of discomfort, but intensity for its own sake is not the goal. More pressure is not “better.” The work follows contact, presence, and what your body is ready to meet.',
+      p1: 'A session usually lasts around 90 minutes, although shorter or longer formats are also possible by agreement. It often begins with a short conversation and sometimes with a quiet moment to arrive more fully in the present.',
+      p2: 'From there, body awareness, a simple standing body reading, and hands-on work may all become part of the session. The focus is not on imposing an outside interpretation, but on sensing what is actually present and alive in the moment.',
+      p3: 'The touch can be very subtle or more direct, depending on what is needed. What matters is not intensity, but presence, communication, and what the body is ready to meet.',
+      p4: 'Many people leave a session feeling calmer, more grounded, clearer inside, or more in contact with themselves. Others experience the work as energising or activating. It can help to leave a little space afterwards rather than rushing straight into the next thing.',
     },
     offering: {
-      heading: 'Session format',
+      heading: 'Formats',
       cardIndividualTitle: 'Individual sessions',
-      cardIndividualBody: 'Individual sessions are possible and can be shaped around what is alive for you right now.',
+      cardIndividualBody:
+        'For acute physical tension or specific themes, individual sessions can be a good option. They are shaped around what is most present for you at the moment.',
+      cardSeriesTitle: '10-session series',
+      cardSeriesBody:
+        'The classic Rebalancing approach is structured as a series of ten sessions that build on one another. Each session works with a particular area of the body and a related life theme. Over time, this can open a deeper process of awareness, alignment, and integration.',
       cardRhythmTitle: 'Rhythm',
       cardRhythmBody:
-        'The space between sessions depends on the person and the process. About two weeks can be a useful orientation — and it can vary.',
+        'Around two weeks between sessions can be a helpful rhythm. At the same time, the exact timing always depends on the person, the process, and what feels right.',
     },
     pricing: {
-      heading: 'Prices',
+      heading: 'Pricing',
       intro: 'Rebalancing sessions',
-      footnote: 'If cost is a concern, please reach out — there is often a way to make it work.',
+      footnote: 'If the cost is currently a barrier, feel free to reach out anyway.',
       items: [
-        { duration: '60 minutes', price: '€90' },
-        { duration: '90 minutes', price: '€120' },
-        { duration: '120 minutes', price: '€160' },
+        { duration: '60 minutes', price: '90 €' },
+        { duration: '90 minutes', price: '120 €' },
+        { duration: '120 minutes', price: '160 €' },
       ],
     },
     series: {
-      heading: 'The ten sessions',
+      heading: 'The 10 sessions at a glance',
       intro:
-        'Rebalancing is traditionally organised as ten sessions that build on one another, each with a thematic emphasis. Individual sessions are always possible; for recurring patterns or a wish to go deeper, a series of ten can be a supportive frame. The themes below follow the classical Rebalancing sequence (content informed by common Rebalancing materials).',
-      sourceNote: '',
+        'The 10-session series is at the heart of Rebalancing. Each session has its own physical focus and a corresponding theme.',
       sessions: [
+        { title: '1. Chest & diaphragm', body: 'Inspiration, uprightness, breathing.' },
+        { title: '2. Legs', body: 'Finding my standpoint, standing with myself.' },
         {
-          title: '1 — Rib cage & diaphragm',
-          body: 'Inspiration, uplift, breath.',
+          title: '3. Shoulders',
+          body: 'Giving and receiving, sensing boundaries, entering into relationship.',
         },
+        { title: '4. Pelvis', body: 'Control and surrender, carrying and being carried.' },
+        { title: '5. Belly', body: 'Coming to the centre, trust, digestion, self-acceptance.' },
+        { title: '6. Back', body: 'Uprightness and holding back.' },
+        { title: '7. Head', body: 'Perception and change.' },
         {
-          title: '2 — Legs',
-          body: 'Finding your footing, standing with yourself.',
-        },
-        {
-          title: '3 — Shoulders',
-          body: 'Giving and receiving, sensing boundaries, relating.',
-        },
-        {
-          title: '4 — Pelvis',
-          body: 'Control and surrender, holding and being held.',
-        },
-        {
-          title: '5 — Abdomen',
-          body: 'Coming into the centre, trust, digesting, self-acceptance.',
-        },
-        {
-          title: '6 — Back',
-          body: 'Uprightness and restraint.',
-        },
-        {
-          title: '7 — Head',
-          body: 'Perception and change.',
-        },
-        {
-          title: '8 — Integration',
-          body: 'Deepening how different regions connect — first integration pass of the series.',
-        },
-        {
-          title: '9 — Integration',
-          body: 'Bringing the parts together into a lived sense of wholeness.',
-        },
-        {
-          title: '10 — Integration',
-          body: 'Sensing wholeness and freedom in connection — closing the series.',
+          title: '8–10. Integration',
+          body: 'Bringing the parts together, becoming whole, being free in connection.',
         },
       ],
     },
     imageBand: {
-      quote: 'Attentive touch, unhurried pace, room for your perception.',
+      quote: 'An invitation to listen more deeply to your body.',
     },
     contact: {
-      heading: 'Get in touch',
-      intro: 'If you would like to book a session or ask a question, you are welcome to reach out.',
-      email: 'Email',
-      phone: 'Phone / Signal / WhatsApp',
-      location: 'Location',
-      locationValue: 'On request',
-      languages: 'Languages',
-      languagesValue: 'English, German',
+      heading: 'Contact',
+      intro:
+        'If you would like to book a session or ask a question, I would be glad to hear from you.',
+      phoneLabel: 'Phone',
+      emailLabel: 'Email',
+      languagesLabel: 'Languages',
+      languagesValue: 'German, English',
     },
     ctaBand: {
-      text: 'Curious about a first step?',
+      text: 'I would be glad to hear from you.',
       button: 'Book a session',
     },
     disclaimer: {
-      heading: 'Disclaimer',
-      body: 'This work is offered as bodywork for well-being, relaxation, and awareness. It is not medical treatment, does not replace medical care, and does not include diagnosis or promises of healing. If you have acute or serious health concerns, please consult an appropriate professional.',
+      heading: 'Please note',
+      body: 'This work is offered as bodywork for well-being, relaxation, and awareness. It is not a medical treatment and does not replace medical, physiotherapeutic, or psychotherapeutic care. No diagnoses are made and no healing promises are given. If you have acute or serious health concerns, please consult an appropriately qualified professional.',
     },
     footer: {
       name: 'Elias Krause',
