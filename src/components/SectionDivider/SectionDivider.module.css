@@ -1,0 +1,14 @@
+.divider {
+  height: 1px;
+  max-width: var(--content-wide);
+  margin-inline: auto;
+  margin-block: 0;
+  padding-inline: var(--space-md);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-border) 15%,
+    var(--color-border) 85%,
+    transparent
+  );
+}
