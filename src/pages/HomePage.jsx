@@ -192,7 +192,11 @@ export function HomePage() {
               <ResponsiveImage
                 src={img.src}
                 alt={img.alt}
-                className={styles.galleryItem}
+                className={
+                  i === 1
+                    ? `${styles.galleryItem} ${styles.galleryItemFocalLeft}`
+                    : styles.galleryItem
+                }
                 sizes="(min-width: 900px) 22vw, 100vw"
               />
             </Reveal>
