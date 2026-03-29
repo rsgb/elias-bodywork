@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Section } from '../components/Section/Section'
 import { Heading } from '../components/Heading/Heading'
 import { useTranslations } from '../context/LanguageContext'
+import { contact } from '../data/contact'
 import styles from '../App.module.css'
 
 export function PrivacyPage() {
@@ -27,7 +28,9 @@ export function PrivacyPage() {
               <Heading level={3} className={styles.legalSubheading}>
                 {block.title}
               </Heading>
-              <p className={styles.legalText}>{block.body}</p>
+              <p className={styles.legalText}>
+                {block.body.replace(/\{\{phone\}\}/g, contact.phoneDisplay)}
+              </p>
             </div>
           ))}
         </div>

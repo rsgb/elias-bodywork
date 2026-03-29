@@ -48,7 +48,6 @@ export function HomePage() {
               <p className={styles.heroKicker}>{tr.nav.brand}</p>
               <h1 className={styles.heroTitle} id="hero-title">
                 <span className={styles.heroMainTitle}>{tr.hero.mainTitle}</span>
-                <span className={styles.heroPractitioner}>{tr.hero.practitioner}</span>
               </h1>
               <p className={styles.heroTagline}>{tr.hero.tagline}</p>
               <div className={styles.ctaRow}>
@@ -231,7 +230,7 @@ export function HomePage() {
                   {tr.contact.whatsappCta}
                 </Button>
                 <Button href={`mailto:${contact.email}`} variant="secondary">
-                  {tr.hero.book}
+                  {tr.contact.emailCta}
                 </Button>
               </div>
             </div>

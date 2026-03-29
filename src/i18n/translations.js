@@ -25,7 +25,6 @@ export const translations = {
     lang: { de: 'DE', en: 'EN', label: 'Sprache' },
     hero: {
       mainTitle: 'Rebalancing',
-      practitioner: 'Elias Krause',
       tagline:
         'Faszien- und Körperarbeit für Erdung, Wahrnehmung und tieferen Kontakt mit Deinem Körper.',
       book: 'Sitzung anfragen',
@@ -121,7 +120,8 @@ export const translations = {
       emailLabel: 'E-Mail',
       languagesLabel: 'Sprachen',
       languagesValue: 'Deutsch, Englisch',
-      whatsappCta: 'Auf WhatsApp schreiben',
+      whatsappCta: 'WhatsApp',
+      emailCta: 'E-Mail senden',
     },
     footer: {
       name: 'Elias Krause',
@@ -138,11 +138,11 @@ export const translations = {
         sections: [
           {
             title: '1. Verantwortlicher',
-            body: 'Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Elias Krause. Die Kontaktdaten entnehmen Sie bitte dem Impressum.',
+            body: 'Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Elias Krause. Die postalischen Kontaktdaten entnehmen Sie bitte dem Impressum. Sie erreichen uns telefonisch unter {{phone}}.',
           },
           {
             title: '2. Aufruf der Website / Hosting',
-            body: 'Wenn Sie diese Website besuchen, werden durch Ihren Browser technisch notwendige Informationen an den Server übermittelt (z. B. Browsertyp, Datum und Uhrzeit der Anfrage). Der Anbieter des Webhostings kann dabei Zugriffs- bzw. Server-Logdaten verarbeiten, die zur sicheren und stabilen Bereitstellung der Seite erforderlich sind. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen Website).',
+            body: 'Wenn Sie diese Website besuchen, werden durch Ihren Browser technisch notwendige Informationen an den Server übermittelt (z. B. Browsertyp, Datum und Uhrzeit der Anfrage). Der Anbieter des Webhostings kann dabei Zugriffs- bzw. Server-Logdaten verarbeiten, die zur sicheren und stabilen Bereitstellung der Seite erforderlich sind. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen Website). Die Speicherdauer der Server-Logdaten richtet sich nach den Vorgaben des Webhosting-Anbieters.',
           },
           {
             title: '3. Google Fonts',
@@ -162,11 +162,7 @@ export const translations = {
           },
           {
             title: '7. Ihre Rechte',
-            body: 'Sie haben nach Maßgabe der DSGVO Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen. Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.',
-          },
-          {
-            title: '8. Urheberrecht',
-            body: 'Texte, redaktionelle Inhalte und die Gestaltung dieser Website sind urheberrechtlich geschützt. Die Fotografien werden mit Namensnennung des Fotografen im Footer genutzt; eine weitergehende Nutzung ist ohne Zustimmung nicht gestattet.',
+            body: 'Sie haben nach Maßgabe der DSGVO Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen. Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständige Aufsichtsbehörde in Bayern ist das Bayerische Landesamt für Datenschutzaufsicht (BayLfD), https://www.ldbv.bayern.de/',
           },
         ],
       },
@@ -176,7 +172,7 @@ export const translations = {
         sections: [
           {
             title: 'Angaben gemäß § 5 DDG / TMG',
-            body: 'Elias Krause\n[Bitte hier die vollständige ladungsfähige Anschrift ergänzen.]',
+            body: 'Elias Krause\nPfarrstrasse 21\n82418 Murnau',
           },
           {
             title: 'Verantwortlich für den Inhalt',
@@ -214,7 +210,6 @@ export const translations = {
     lang: { de: 'DE', en: 'EN', label: 'Language' },
     hero: {
       mainTitle: 'Rebalancing',
-      practitioner: 'Elias Krause',
       tagline:
         'Fascia and bodywork sessions for grounding, awareness, and deeper contact with your body.',
       book: 'Book a session',
@@ -310,7 +305,8 @@ export const translations = {
       emailLabel: 'Email',
       languagesLabel: 'Languages',
       languagesValue: 'German, English',
-      whatsappCta: 'Message on WhatsApp',
+      whatsappCta: 'WhatsApp',
+      emailCta: 'Send email',
     },
     footer: {
       name: 'Elias Krause',
@@ -327,11 +323,11 @@ export const translations = {
         sections: [
           {
             title: '1. Controller',
-            body: 'The party responsible for processing personal data on this website within the meaning of the GDPR is Elias Krause. Please see the legal notice (Imprint page) for contact details.',
+            body: 'The party responsible for processing personal data on this website within the meaning of the GDPR is Elias Krause. Please see the legal notice (Imprint page) for postal contact details. You can reach us by phone at {{phone}}.',
           },
           {
             title: '2. Visiting this website / hosting',
-            body: 'When you visit the site, your browser automatically sends technically necessary information to the server (for example browser type, time of the request). The web hosting provider may process access or server log data as needed to deliver the site securely and reliably. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a functioning website).',
+            body: 'When you visit the site, your browser automatically sends technically necessary information to the server (for example browser type, time of the request). The web hosting provider may process access or server log data as needed to deliver the site securely and reliably. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a functioning website). The retention period for server log data follows the policies of the web hosting provider.',
           },
           {
             title: '3. Google Fonts',
@@ -351,11 +347,7 @@ export const translations = {
           },
           {
             title: '7. Your rights',
-            body: 'Where the GDPR applies, you have rights of access, rectification, erasure, restriction of processing, data portability, and objection to certain processing. You also have the right to lodge a complaint with a supervisory authority.',
-          },
-          {
-            title: '8. Copyright',
-            body: 'Text, editorial content, and the design of this website are protected by copyright. Photographs are credited to the photographer in the footer; any further use requires permission.',
+            body: 'Where the GDPR applies, you have rights of access, rectification, erasure, restriction of processing, data portability, and objection to certain processing. You also have the right to lodge a complaint with a supervisory authority. The supervisory authority responsible in Bavaria is the Bayerisches Landesamt für Datenschutzaufsicht (BayLfD), https://www.ldbv.bayern.de/',
           },
         ],
       },
@@ -365,7 +357,7 @@ export const translations = {
         sections: [
           {
             title: 'Information provided under applicable law',
-            body: 'Elias Krause\n[Please add your full postal address here where required.]',
+            body: 'Elias Krause\nPfarrstrasse 21\n82418 Murnau',
           },
           {
             title: 'Responsible for content',
