@@ -34,29 +34,26 @@ export function HomePage() {
   return (
     <main className={styles.main}>
       <section id="hero" className={styles.heroSection} aria-labelledby="hero-title">
-        <div className={styles.heroMedia}>
-          <ResponsiveImage
-            src={images.hero.src}
-            alt={images.hero.alt}
-            priority
-            className={styles.heroFigure}
-            sizes="100vw"
-          />
-          <div className={styles.heroScrim} aria-hidden="true" />
-        </div>
-        <div className={styles.heroInner}>
-          <p className={styles.heroKicker}>{tr.nav.brand}</p>
-          <div className={styles.heroTextBlock}>
-            <h1 className={styles.heroTitle} id="hero-title">
-              <span className={styles.heroMainTitle}>{tr.hero.mainTitle}</span>
-              <span className={styles.heroPractitioner}>{tr.hero.practitioner}</span>
-            </h1>
-            <p className={styles.heroTagline}>{tr.hero.tagline}</p>
-            <div className={styles.ctaRow}>
-              <Button to="/#contact">{tr.hero.book}</Button>
-              <Button to="/#contact" variant="secondary">
-                {tr.hero.secondaryCta}
-              </Button>
+        <div className={styles.heroContainedWrap}>
+          <div className={styles.heroContainedCard}>
+            <div className={styles.heroContainedMedia}>
+              <ResponsiveImage
+                src={images.hero.src}
+                alt={images.hero.alt}
+                priority
+                sizes="(min-width: 901px) 40vw, 100vw"
+              />
+            </div>
+            <div className={styles.heroContainedCopy}>
+              <p className={styles.heroKicker}>{tr.nav.brand}</p>
+              <h1 className={styles.heroTitle} id="hero-title">
+                <span className={styles.heroMainTitle}>{tr.hero.mainTitle}</span>
+                <span className={styles.heroPractitioner}>{tr.hero.practitioner}</span>
+              </h1>
+              <p className={styles.heroTagline}>{tr.hero.tagline}</p>
+              <div className={styles.ctaRow}>
+                <Button to="/#contact">{tr.hero.book}</Button>
+              </div>
             </div>
           </div>
         </div>
@@ -78,11 +75,11 @@ export function HomePage() {
         </Reveal>
       </Section>
 
-      <section className={styles.imageBand} style={{ backgroundImage: `url(${images.interludeA.src})` }}>
-        <div className={styles.imageBandInner}>
-          <p className={styles.imageBandQuote}>{tr.imageBand.quote}</p>
-        </div>
-      </section>
+      <section
+        className={styles.imageBand}
+        style={{ backgroundImage: `url(${images.interludeA.src})` }}
+        aria-hidden="true"
+      />
 
       <TestimonialsPlaceholder items={[]} />
 

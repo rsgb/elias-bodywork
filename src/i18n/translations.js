@@ -13,7 +13,7 @@ export const translations = {
       brand: 'Elias Krause, Körperarbeit',
       intro: 'Rebalancing',
       about: 'Über mich',
-      support: 'Unterstützung',
+      support: 'Wirksamkeit & Nutzen',
       session: 'Ablauf',
       offering: 'Formate & Preise',
       contact: 'Kontakt',
@@ -29,7 +29,6 @@ export const translations = {
       tagline:
         'Faszien- und Körperarbeit für Erdung, Wahrnehmung und tieferen Kontakt mit Deinem Körper.',
       book: 'Sitzung anfragen',
-      secondaryCta: 'Kontakt aufnehmen',
     },
     intro: {
       heading: 'Was ist Rebalancing?',
@@ -113,9 +112,6 @@ export const translations = {
           body: 'Die Teile zusammenbringen, ganz werden, frei sein in Verbundenheit.',
         },
       ],
-    },
-    imageBand: {
-      quote: 'Eine Einladung, Deinem Körper tiefer zuzuhören.',
     },
     contact: {
       heading: 'Kontakt',
@@ -222,7 +218,6 @@ export const translations = {
       tagline:
         'Fascia and bodywork sessions for grounding, awareness, and deeper contact with your body.',
       book: 'Book a session',
-      secondaryCta: 'Get in touch',
     },
     intro: {
       heading: 'What is Rebalancing?',
@@ -306,9 +301,6 @@ export const translations = {
           body: 'Bringing the parts together, becoming whole, being free in connection.',
         },
       ],
-    },
-    imageBand: {
-      quote: 'An invitation to listen more deeply to your body.',
     },
     contact: {
       heading: 'Contact',
