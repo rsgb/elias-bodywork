@@ -34,10 +34,11 @@
 
 .heroContainedMedia :global(img) {
   width: 100%;
-  height: min(40vh, 420px);
-  min-height: 220px;
+  height: min(52vh, 520px);
+  min-height: 280px;
   object-fit: cover;
-  object-position: center 42%;
+  /* Center vertically on small screens so more of the upper and lower image area stays visible */
+  object-position: center center;
 }
 
 .heroContainedCopy {
