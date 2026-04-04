@@ -69,12 +69,6 @@ export function Navbar() {
         .join(" ")}
     >
       <nav className={styles.nav} aria-label="Primary">
-        <div className={styles.navStart}>
-          <Link to="/" className={styles.brand} onClick={closeMenu}>
-            {tr.nav.brand}
-          </Link>
-        </div>
-
         <ul
           id={menuId}
           className={[styles.list, menuOpen ? styles.listOpen : ""]

@@ -30,39 +30,12 @@
   min-height: var(--nav-height);
 }
 
-.navStart {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  align-items: center;
-}
-
 .navEnd {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   flex-shrink: 0;
-}
-
-.brand {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  font-size: clamp(0.875rem, 2.6vw, 0.9375rem);
-  color: var(--color-text);
-  text-decoration: none;
-  letter-spacing: -0.01em;
-  line-height: 1.25;
-  max-width: min(12.5rem, 52vw);
-}
-
-@media (min-width: 901px) {
-  .brand {
-    max-width: none;
-  }
-}
-
-.brand:hover {
-  color: var(--color-olive-strong);
+  margin-left: auto;
 }
 
 .srOnly {
@@ -269,10 +242,6 @@
   .nav {
     flex-wrap: nowrap;
     gap: var(--space-md);
-  }
-
-  .navStart {
-    flex: 0 0 auto;
   }
 
   .list {
