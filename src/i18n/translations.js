@@ -167,7 +167,7 @@ export const translations = {
           },
           {
             title: "4. Kontaktformular und andere Kontaktwege",
-            body: "Sie können über das Kontaktformular auf dieser Website eine Nachricht senden. Die Übermittlung erfolgt technisch über Netlify (Formular-Dienst im Rahmen des Hostings). Netlify kann die Daten gemäß eigener Datenschutzerklärung verarbeiten: https://www.netlify.com/privacy/ Wir nutzen die von Ihnen eingegebenen Angaben (z. B. Name, E-Mail-Adresse, Nachrichtentext) zur Bearbeitung Ihrer Anfrage. Es wird keine geschäftliche E-Mail-Adresse öffentlich auf der Website angezeigt. Alternativ können Sie uns telefonisch erreichen oder über WhatsApp schreiben; dort gelten die Datenschutzregeln von WhatsApp bzw. Meta. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO.",
+            body: "Sie können über das Kontaktformular auf dieser Website eine Nachricht senden. Die Übermittlung erfolgt technisch über den Dienst Web3Forms (Surjith S M, Indien). Web3Forms kann die Daten gemäß eigener Datenschutzerklärung verarbeiten: https://web3forms.com/privacy Die Website wird weiterhin über Netlify bereitgestellt; für reines Hosting siehe Abschnitt 2. Wir nutzen die von Ihnen eingegebenen Angaben (z. B. Name, E-Mail-Adresse, Nachrichtentext) zur Bearbeitung Ihrer Anfrage. Es wird keine geschäftliche E-Mail-Adresse öffentlich auf der Website angezeigt. Alternativ können Sie uns telefonisch erreichen oder über WhatsApp schreiben; dort gelten die Datenschutzregeln von WhatsApp bzw. Meta. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO.",
           },
           {
             title: "5. Spracheinstellung (lokaler Speicher)",
@@ -374,7 +374,7 @@ export const translations = {
           },
           {
             title: "4. Contact form and other channels",
-            body: "You can send a message through the contact form on this website. Submissions are handled technically through Netlify (forms as part of hosting). Netlify may process data under its own privacy policy: https://www.netlify.com/privacy/ We use what you enter (for example name, email address, and message) to respond to your request. A business email address is not published on the site to reduce spam. You can also phone us or use WhatsApp; Meta/WhatsApp’s privacy terms apply there. Legal basis: Art. 6(1)(b) GDPR (pre-contractual steps) and/or Art. 6(1)(f) GDPR.",
+            body: "You can send a message through the contact form on this website. Submissions are handled technically through Web3Forms (Surjith S M, India). Web3Forms may process data under its own privacy policy: https://web3forms.com/privacy The site is still hosted on Netlify; for hosting alone, see section 2. We use what you enter (for example name, email address, and message) to respond to your request. A business email address is not published on the site to reduce spam. You can also phone us or use WhatsApp; Meta/WhatsApp’s privacy terms apply there. Legal basis: Art. 6(1)(b) GDPR (pre-contractual steps) and/or Art. 6(1)(f) GDPR.",
           },
           {
             title: "5. Language preference (local storage)",

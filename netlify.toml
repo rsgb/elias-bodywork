@@ -2,5 +2,5 @@
   command = "npm run build"
   publish = "dist"
 
-# Forms → form "contact" → set notification email in the Netlify UI
-# (e.g. rebalancing.elias@gmail.com). Not configured in this file.
+# Contact form uses Web3Forms. In Netlify: Site settings → Environment variables →
+# add VITE_WEB3FORMS_ACCESS_KEY (same value as in local .env), then redeploy.

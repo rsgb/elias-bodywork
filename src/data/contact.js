@@ -1,8 +1,8 @@
 /**
  * Public contact details (tel, WhatsApp). No business email here — reduces spam exposure.
- * Form deliveries: configure Netlify Forms → Notifications → email (e.g. rebalancing.elias@gmail.com).
+ * Contact form: Web3Forms (see VITE_WEB3FORMS_ACCESS_KEY).
  */
-export const NETLIFY_CONTACT_FORM_NAME = 'contact'
+export const WEB3FORMS_SUBMIT_URL = 'https://api.web3forms.com/submit'
 
 export const contact = {
   phoneDisplay: '+49 157 3197 1061',

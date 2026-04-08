@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useTranslations } from '../../context/LanguageContext'
-import { NETLIFY_CONTACT_FORM_NAME } from '../../data/contact'
+import { WEB3FORMS_SUBMIT_URL } from '../../data/contact'
 import styles from '../../App.module.css'
 import btnStyles from '../Button/Button.module.css'
+
+const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
 
 export function ContactForm() {
   const tr = useTranslations()
@@ -12,15 +14,35 @@ export function ContactForm() {
     e.preventDefault()
     setStatus('sending')
     const form = e.currentTarget
-    const data = new URLSearchParams(new FormData(form))
+    const fd = new FormData(form)
+
+    if (fd.get('botcheck')) {
+      form.reset()
+      setStatus('success')
+      return
+    }
+
+    if (!accessKey?.trim()) {
+      setStatus('error')
+      return
+    }
+
+    const payload = {
+      access_key: accessKey.trim(),
+      subject: 'Kontakt — rebalancing-elias.com',
+      name: String(fd.get('name') ?? '').trim(),
+      email: String(fd.get('email') ?? '').trim(),
+      message: String(fd.get('message') ?? '').trim(),
+    }
 
     try {
-      const res = await fetch('/', {
+      const res = await fetch(WEB3FORMS_SUBMIT_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: data.toString(),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
       })
-      if (res.ok) {
+      const data = res.ok ? await res.json() : null
+      if (data?.success === true) {
         setStatus('success')
         form.reset()
       } else {
@@ -34,20 +56,11 @@ export function ContactForm() {
   return (
     <div className={styles.contactFormBlock}>
       <h3 className={styles.contactFormHeading}>{tr.contact.formHeading}</h3>
-      <form
-        className={styles.contactForm}
-        name={NETLIFY_CONTACT_FORM_NAME}
-        method="POST"
-        action="/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
-      >
-        <input type="hidden" name="form-name" value={NETLIFY_CONTACT_FORM_NAME} />
+      <form className={styles.contactForm} onSubmit={handleSubmit}>
         <p className={styles.contactFormHoneypot} aria-hidden="true">
           <label>
             {tr.contact.formHoneypotLabel}
-            <input name="bot-field" tabIndex={-1} autoComplete="off" />
+            <input name="botcheck" tabIndex={-1} autoComplete="off" />
           </label>
         </p>
         <div className={styles.contactFormRow}>
